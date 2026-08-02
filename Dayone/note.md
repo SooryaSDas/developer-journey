@@ -10,3 +10,7 @@ JavaScript historyile biggest bug.
 
 4. typeof []
 object - array is a special kind of object
+
+5. var, let and const
+var, let, and const are keywords used to declare variables in JavaScript. 
+let and const are hoisted, but they remain in the Temporal Dead Zone until execution reaches their declaration. Accessing them before that throws a ReferenceError.
