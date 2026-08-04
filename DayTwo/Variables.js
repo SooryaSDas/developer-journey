@@ -19,9 +19,12 @@
 // }
 // ---------------------------------------------------
 // question 5
-greet(); // TypeError: greet is not a function
-var greet = function(){
+// greet(); // TypeError: greet is not a function
+// var greet = function(){
+//     console.log("hello")
+// }
+// ---------------------------------------------------
+greet(); // ReferenceError: Cannot access 'greet' before initialization
+let greet = function(){
     console.log("hello")
 }
-// ---------------------------------------------------
-
