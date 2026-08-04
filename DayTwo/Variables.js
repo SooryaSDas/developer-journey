@@ -9,5 +9,11 @@
 
 // ---------------------------------------------------
 // Question 3
-console.log(a); // ReferenceError: Cannot access 'a' before initialization
-const a = 10;
+// console.log(a); // ReferenceError: Cannot access 'a' before initialization
+// const a = 10;
+
+// question 4
+greet(); // hello
+function greet(){
+    console.log("hello")
+}
