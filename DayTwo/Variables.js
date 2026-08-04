@@ -11,9 +11,17 @@
 // Question 3
 // console.log(a); // ReferenceError: Cannot access 'a' before initialization
 // const a = 10;
-
+// ---------------------------------------------------
 // question 4
-greet(); // hello
-function greet(){
+// greet(); // hello
+// function greet(){
+//     console.log("hello")
+// }
+// ---------------------------------------------------
+// question 5
+greet(); // TypeError: greet is not a function
+var greet = function(){
     console.log("hello")
 }
+// ---------------------------------------------------
+
