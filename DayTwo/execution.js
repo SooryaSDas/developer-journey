@@ -48,14 +48,30 @@
 // one();
 
 // ---------------------------------------------------------
+// var a = 10;
+// function one() {
+//     var a = 20;
+//     function two() {
+//         console.log(a);
+//     }
+//     two();
+// }
+// one();
+// console.log(a); //20 10
+
+// ---------------------------------------------------------
+
 var a = 10;
 function one() {
+    console.log(a);
     var a = 20;
     function two() {
         console.log(a);
+        a = 30;
+        console.log(a);
     }
     two();
+    console.log(a);
 }
 one();
-console.log(a); //20 10
-
+console.log(a);
