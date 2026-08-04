@@ -2,7 +2,12 @@
 // Predict the output first.
 // console.log(a);
 // var a = 10; // undefined
-
+// ---------------------------------------------------
 // Question 2
+// console.log(a); // ReferenceError: Cannot access 'a' before initialization
+// let a = 10;
+
+// ---------------------------------------------------
+// Question 3
 console.log(a); // ReferenceError: Cannot access 'a' before initialization
-let a = 10;
+const a = 10;
