@@ -61,17 +61,29 @@
 
 // ---------------------------------------------------------
 
-var a = 10;
-function one() {
-    console.log(a);
-    var a = 20;
-    function two() {
-        console.log(a);
-        a = 30;
+// var a = 10;
+// function one() {
+//     console.log(a);
+//     var a = 20;
+//     function two() {
+//         console.log(a);
+//         a = 30;
+//         console.log(a);
+//     }
+//     two();
+//     console.log(a);
+// }
+// one();
+// console.log(a);
+
+// ---------------------------------------------------------
+
+var a = 1;
+function first() {
+    var a = 2;
+    second();
+    function second() {
         console.log(a);
     }
-    two();
-    console.log(a);
 }
-one();
-console.log(a);
+first(); // 2
