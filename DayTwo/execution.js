@@ -78,12 +78,23 @@
 
 // ---------------------------------------------------------
 
+// var a = 1;
+// function first() {
+//     var a = 2;
+//     second();
+//     function second() {
+//         console.log(a);
+//     }
+// }
+// first(); // 2
+
+// ---------------------------------------------------------
+
 var a = 1;
 function first() {
-    var a = 2;
     second();
     function second() {
         console.log(a);
     }
 }
-first(); // 2
+first(); // 1
