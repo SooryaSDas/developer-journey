@@ -90,11 +90,49 @@
 
 // ---------------------------------------------------------
 
-var a = 1;
-function first() {
-    second();
-    function second() {
-        console.log(a);
-    }
-}
-first(); // 1
+// var a = 1;
+// function first() {
+//     second();
+//     function second() {
+//         console.log(a);
+//     }
+// }
+// first(); // 1
+
+// ---------------------------------------------------------
+
+// var x = 5;
+// function one() {
+//     console.log(x);
+//     function two() {
+//         var x = 10;
+//         console.log(x);
+//     }
+//     two();
+//     console.log(x);
+// }
+// one();
+// console.log(x);
+
+// ---------------------------------------------------------
+
+// var a = 10;
+// function one() {
+//     console.log(a);
+//     var a = 20;
+//     function two() {
+//         console.log(a);
+//         var a = 30;
+//         console.log(a);
+//     }
+//     two();
+//     console.log(a);
+// }
+// one();
+// console.log(a); 
+// output
+// undefined
+// undefined
+// 30
+// 20
+// 10
