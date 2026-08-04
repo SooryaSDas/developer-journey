@@ -29,7 +29,7 @@
 //     console.log("hello")
 // }
 // ---------------------------------------------------
-greet(); // ReferenceError: Cannot access 'greet' before initialization
-const greet = function(){
-    console.log("hello")
-}
+// greet(); // ReferenceError: Cannot access 'greet' before initialization
+// const greet = function(){
+//     console.log("hello")
+// }
