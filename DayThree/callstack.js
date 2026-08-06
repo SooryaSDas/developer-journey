@@ -25,15 +25,18 @@
 
 // one(); // one
 // two(); // Two
+
+// ---------------------------------------
+
+// function one() {
+//     console.log("One");
+//     two();
+// }
+
+// function two() {
+//     console.log("Two");
+// }
+
+// one(); // One Two
+
 // // ---------------------------------------
-
-function one() {
-    console.log("One");
-    two();
-}
-
-function two() {
-    console.log("Two");
-}
-
-one(); // One Two
