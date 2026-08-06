@@ -15,13 +15,16 @@
 
 // two(); // One
 // ---------------------------------------
-function one() {
-    console.log("One");
-}
+// function one() {
+//     console.log("One");
+// }
 
-function two() {
-    console.log("Two");
-}
+// function two() {
+//     console.log("Two");
+// }
 
-one(); // one
-two(); // Two
+// one(); // one
+// two(); // Two
+// // ---------------------------------------
+
+
