@@ -178,12 +178,51 @@
 // RangeError: Maximum call stack size exceeded
 // -----------------------------------------------
 
-function one() {
-    two();
-}
+// function one() {
+//     two();
+// }
 
-function two() {
-    one();
-}
+// function two() {
+//     one();
+// }
 
-one(); //RangeError: Maximum call stack size exceeded
+// one(); //RangeError: Maximum call stack size exceeded
+
+// -----------------------------------------------
+// console.log("Program Start");
+
+// function login() {
+//     console.log("Login");
+
+//     dashboard();
+
+//     console.log("Logout");
+// }
+
+// function dashboard() {
+//     console.log("Dashboard");
+
+//     profile();
+
+//     console.log("Dashboard End");
+// }
+
+// function profile() {
+//     console.log("Profile");
+// }
+
+// login();
+
+// console.log("Program End");
+
+// output : 
+// Program Start
+// Login
+// Dashboard
+// Profile
+// Dashboard End
+// Logout
+// Program End
+
+// -----------------------------------------------
+
