@@ -27,4 +27,13 @@
 // two(); // Two
 // // ---------------------------------------
 
+function one() {
+    console.log("One");
+    two();
+}
 
+function two() {
+    console.log("Two");
+}
+
+one(); // One Two
