@@ -147,3 +147,33 @@
 // one(); //10
 
 // ---------------------------------------
+// function first() {
+//     second();
+// }
+
+// function second() {
+//     third();
+// }
+
+// function third() {
+//     console.log("Third");
+// }
+
+// console.log("Start");
+
+// first();
+
+// console.log("Finish");
+// output : 
+// Start
+// Third
+// Finish
+
+// ---------------------------------------
+
+function test() {
+    test();
+}
+
+test(); 
+// RangeError: Maximum call stack size exceeded
