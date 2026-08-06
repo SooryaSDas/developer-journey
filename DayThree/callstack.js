@@ -89,3 +89,26 @@
 // End
 
 // // ---------------------------------------
+
+console.log("A");
+
+function one() {
+    console.log("B");
+    two();
+    console.log("C");
+}
+
+function two() {
+    console.log("D");
+}
+
+one();
+
+console.log("E"); 
+// A
+// B
+// D
+// C
+// E
+
+// // ---------------------------------------
