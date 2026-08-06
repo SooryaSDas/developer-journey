@@ -40,3 +40,20 @@
 // one(); // One Two
 
 // // ---------------------------------------
+
+function one() {
+    console.log("One");
+    two();
+    console.log("One End");
+}
+
+function two() {
+    console.log("Two");
+}
+
+one(); 
+//One
+// Two
+// One End
+
+// // ---------------------------------------
