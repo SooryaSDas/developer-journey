@@ -1,5 +1,17 @@
+// function one() {
+//     console.log("One");
+// }
+
+// one(); //one
+// ---------------------------------------
+
 function one() {
     console.log("One");
 }
 
-one(); //one
+function two() {
+    one();
+}
+
+two(); // One
+// ---------------------------------------
