@@ -39,7 +39,7 @@
 
 // one(); // One Two
 
-// // ---------------------------------------
+//---------------------------------------
 
 // function one() {
 //     console.log("One");
@@ -56,22 +56,36 @@
 // Two
 // One End
 
+//---------------------------------------
+
+// function one() {
+//     two();
+// }
+
+// function two() {
+//     three();
+// }
+
+// function three() {
+//     console.log("Hello");
+// }
+
+// one(); // Hello
+
+// ---------------------------------------
+
+// console.log("Start");
+
+// function one() {
+//     console.log("One");
+// }
+
+// one();
+
+// console.log("End");
+// output:
+// Start
+// One
+// End
+
 // // ---------------------------------------
-
-function one() {
-    two();
-}
-
-function two() {
-    three();
-}
-
-function three() {
-    console.log("Hello");
-}
-
-one(); // Hello
-
-// // ---------------------------------------
-
-
