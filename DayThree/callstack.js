@@ -226,3 +226,20 @@
 
 // -----------------------------------------------
 
+function orderFood() {
+    payment();
+}
+
+function payment() {
+    cooking();
+}
+
+function cooking() {
+    delivery();
+}
+
+function delivery() {
+    console.log("Food Delivered");
+}
+
+orderFood(); // Food Delivered
