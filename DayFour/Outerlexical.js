@@ -15,17 +15,41 @@
 //  JavaScript
 // Closure
 
-// ---------------------------------------
+// ---------------------------------------------------------------------------------------------------
+
+// function one() {
+
+//     function two() {
+//         let x = 10;
+//     }
+
+//     function three() {
+//         console.log(x);
+//     }
+
+// }
+// output : no, Because three()'s Outer Lexical Environment points to one(), not to two().
+
+// ---------------------------------------------------------------------------------------------------
+
+let a = 10;
 
 function one() {
 
+    let b = 20;
+
     function two() {
-        let x = 10;
+
+        console.log(a);
+        console.log(b);
+        console.log(c);
+
     }
 
-    function three() {
-        console.log(x);
-    }
+    two();
 
 }
-// output : no, Because three()'s Outer Lexical Environment points to one(), not to two().
+
+one();
+
+// output : 10, 20, ReferenceError: c is not defined
