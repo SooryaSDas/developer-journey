@@ -41,19 +41,37 @@
 
 // // ---------------------------------------
 
-function one() {
-    console.log("One");
-    two();
-    console.log("One End");
-}
+// function one() {
+//     console.log("One");
+//     two();
+//     console.log("One End");
+// }
 
-function two() {
-    console.log("Two");
-}
+// function two() {
+//     console.log("Two");
+// }
 
-one(); 
+// one(); 
 //One
 // Two
 // One End
 
 // // ---------------------------------------
+
+function one() {
+    two();
+}
+
+function two() {
+    three();
+}
+
+function three() {
+    console.log("Hello");
+}
+
+one(); // Hello
+
+// // ---------------------------------------
+
+
