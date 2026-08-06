@@ -5,13 +5,23 @@
 // one(); //one
 // ---------------------------------------
 
+// function one() {
+//     console.log("One");
+// }
+
+// function two() {
+//     one();
+// }
+
+// two(); // One
+// ---------------------------------------
 function one() {
     console.log("One");
 }
 
 function two() {
-    one();
+    console.log("Two");
 }
 
-two(); // One
-// ---------------------------------------
+one(); // one
+two(); // Two
