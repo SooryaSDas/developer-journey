@@ -169,11 +169,21 @@
 // Third
 // Finish
 
-// ---------------------------------------
+// -----------------------------------------------
+// function test() {
+//     test();
+// }
 
-function test() {
-    test();
+// test(); 
+// RangeError: Maximum call stack size exceeded
+// -----------------------------------------------
+
+function one() {
+    two();
 }
 
-test(); 
-// RangeError: Maximum call stack size exceeded
+function two() {
+    one();
+}
+
+one(); //RangeError: Maximum call stack size exceeded
