@@ -113,27 +113,37 @@
 
 // // ---------------------------------------
 
-function one() {
-    console.log("1");
-    two();
-    console.log("2");
-}
+// function one() {
+//     console.log("1");
+//     two();
+//     console.log("2");
+// }
 
-function two() {
-    console.log("3");
-    three();
-    console.log("4");
-}
+// function two() {
+//     console.log("3");
+//     three();
+//     console.log("4");
+// }
 
-function three() {
-    console.log("5");
-}
+// function three() {
+//     console.log("5");
+// }
 
-one();
-1
-3
-5
-4
-2
+// one();
+// 1
+// 3
+// 5
+// 4
+// 2
+
+// ---------------------------------------
+// Execution Context + Call Stack
+// var a = 10;
+
+// function one() {
+//     console.log(a);
+// }
+
+// one(); //10
 
 // ---------------------------------------
