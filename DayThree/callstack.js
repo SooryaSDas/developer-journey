@@ -90,21 +90,21 @@
 
 // // ---------------------------------------
 
-console.log("A");
+// console.log("A");
 
-function one() {
-    console.log("B");
-    two();
-    console.log("C");
-}
+// function one() {
+//     console.log("B");
+//     two();
+//     console.log("C");
+// }
 
-function two() {
-    console.log("D");
-}
+// function two() {
+//     console.log("D");
+// }
 
-one();
+// one();
 
-console.log("E"); 
+// console.log("E"); 
 // A
 // B
 // D
@@ -112,3 +112,28 @@ console.log("E");
 // E
 
 // // ---------------------------------------
+
+function one() {
+    console.log("1");
+    two();
+    console.log("2");
+}
+
+function two() {
+    console.log("3");
+    three();
+    console.log("4");
+}
+
+function three() {
+    console.log("5");
+}
+
+one();
+1
+3
+5
+4
+2
+
+// ---------------------------------------
