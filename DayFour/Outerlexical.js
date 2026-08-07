@@ -55,17 +55,18 @@
 // output : 10, 20, ReferenceError: c is not defined
 
 // ----------------------------------------------------------------------------
-function outer() {
-    let name = "Soorya";
 
-    function inner() {
-        console.log(name);
-    }
+// function outer() {
+//     let name = "Soorya";
 
-    return inner;
-}
+//     function inner() {
+//         console.log(name);
+//     }
 
-const fn = outer();
-fn(); // Soorya
+//     return inner;
+// }
+
+// const fn = outer();
+// fn(); // Soorya
 
 // ----------------------------------------------------------------------------
