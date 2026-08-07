@@ -32,24 +32,40 @@
 
 // ---------------------------------------------------------------------------------------------------
 
-let a = 10;
+// let a = 10;
 
-function one() {
+// function one() {
 
-    let b = 20;
+//     let b = 20;
 
-    function two() {
+//     function two() {
 
-        console.log(a);
-        console.log(b);
-        console.log(c);
+//         console.log(a);
+//         console.log(b);
+//         console.log(c);
 
-    }
+//     }
 
-    two();
+//     two();
 
-}
+// }
 
-one();
+// one();
 
 // output : 10, 20, ReferenceError: c is not defined
+
+// ----------------------------------------------------------------------------
+function outer() {
+    let name = "Soorya";
+
+    function inner() {
+        console.log(name);
+    }
+
+    return inner;
+}
+
+const fn = outer();
+fn(); // Soorya
+
+// ----------------------------------------------------------------------------
