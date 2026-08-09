@@ -116,31 +116,31 @@
 
 // one(); // 20
 
-// ----------------------------------
-let a = 10;
+// // ----------------------------------
+// let a = 10;
 
-function one() {
+// function one() {
 
-    let a = 20;
+//     let a = 20;
 
-    function two() {
+//     function two() {
 
-        let b = 30;
+//         let b = 30;
 
-        function three() {
+//         function three() {
 
-            console.log(a);
-            console.log(b);
-            console.log(c);
+//             console.log(a);
+//             console.log(b);
+//             console.log(c);
 
-        }
+//         }
 
-        let c = 40;
+//         let c = 40;
 
-        three();
-    }
+//         three();
+//     }
 
-    two();
-}
+//     two();
+// }
 
-one(); // 20 30 40
+// one(); // 20 30 40
