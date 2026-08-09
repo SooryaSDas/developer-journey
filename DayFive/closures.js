@@ -1,14 +1,31 @@
-function outer() {
+// function outer() {
 
-    let name = "Soorya";
+//     let name = "Soorya";
 
-    function inner() {
-        console.log(name);
+//     function inner() {
+//         console.log(name);
+//     }
+
+//     return inner;
+// }
+
+// const fn = outer();
+
+// fn(); // Soorya
+
+// ---------------------------------------------
+
+function createUser() {
+
+    let username = "Soorya";
+
+    function getUser() {
+        console.log(username);
     }
 
-    return inner;
+    return getUser;
 }
 
-const fn = outer();
+const user = createUser();
 
-fn(); // Soorya
+user(); // Soorya
