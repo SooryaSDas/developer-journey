@@ -54,15 +54,38 @@
 // 3
 
 // ----------------------------------------
+// let a = 10;
+
+// function one() {
+//     console.log(a);
+// }
+
+// function two() {
+//     let a = 20;
+//     one();
+// }
+
+// two(); // 10
+
+// ------------------------------------------
 let a = 10;
 
 function one() {
-    console.log(a);
+
+    function two() {
+        console.log(a);
+    }
+
+    return two;
 }
 
-function two() {
-    let a = 20;
-    one();
+function three() {
+
+    let a = 30;
+
+    const fn = one();
+
+    fn();
 }
 
-two();
+three(); // 10
