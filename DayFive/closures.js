@@ -15,17 +15,40 @@
 
 // ---------------------------------------------
 
-function createUser() {
+// function createUser() {
 
-    let username = "Soorya";
+//     let username = "Soorya";
 
-    function getUser() {
-        console.log(username);
+//     function getUser() {
+//         console.log(username);
+//     }
+
+//     return getUser;
+// }
+
+// const user = createUser();
+
+// user(); // Soorya
+
+// ---------------------------------------------
+
+function outer() {
+
+    let count = 0;
+
+    function inner() {
+        count++;
+        console.log(count);
     }
 
-    return getUser;
+    return inner;
 }
 
-const user = createUser();
+const counter = outer();
 
-user(); // Soorya
+counter();
+counter();
+counter();
+// 1
+// 2
+// 3
