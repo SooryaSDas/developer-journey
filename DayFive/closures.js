@@ -147,19 +147,53 @@
 
 // ----------------------------------
 
-function outer() {
-    let count = 0;
+// function outer() {
+//     let count = 0;
 
-    function inner() {
-        count++;
-        console.log(count);
-    }
+//     function inner() {
+//         count++;
+//         console.log(count);
+//     }
 
-    return inner;
-}
+//     return inner;
+// }
 
-const counter = outer();
+// const counter = outer();
 
-counter();
-counter();
-counter();
+// counter();
+// counter();
+// counter();
+
+// // output
+// // 1
+// // 2
+// // 3
+
+// code explanation
+
+// outer() → runs ONCE
+//              ↓
+//           count = 0
+//              ↓
+//         returns inner
+//              ↓
+//        counter = inner
+//              ↓
+//    ┌─────────┴─────────┐
+//    ↓                   ↓
+// counter()          counter()
+//    ↓                   ↓
+// inner()             inner()
+//    ↓                   ↓
+// count 1             count 2
+
+// outer() is called only once.
+// outer() creates count = 0.
+// outer() returns inner.
+// counter now points to inner.
+// Every counter() calls inner(), not outer().
+// inner() accesses the same count through its closure.
+// count keeps increasing.
+
+// --------------------------
+
