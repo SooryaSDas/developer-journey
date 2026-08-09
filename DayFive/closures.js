@@ -90,28 +90,57 @@
 
 // three(); // 10
 
-// --------------------------------
-let x = 10;
+// // --------------------------------
+// let x = 10;
+
+// function one() {
+
+//     let x = 20;
+
+//     function two() {
+
+//         console.log(x);
+
+//     }
+
+//     function three() {
+
+//         let x = 30;
+
+//         two(); 
+
+//     }
+
+//     three();
+// }
+
+// one(); // 20
+
+// ----------------------------------
+let a = 10;
 
 function one() {
 
-    let x = 20;
+    let a = 20;
 
     function two() {
 
-        console.log(x);
+        let b = 30;
 
+        function three() {
+
+            console.log(a);
+            console.log(b);
+            console.log(c);
+
+        }
+
+        let c = 40;
+
+        three();
     }
 
-    function three() {
-
-        let x = 30;
-
-        two(); 
-
-    }
-
-    three();
+    two();
 }
 
-one(); // 20
+one(); // 20 30 40
