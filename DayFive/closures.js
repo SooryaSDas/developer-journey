@@ -67,25 +67,51 @@
 
 // two(); // 10
 
-// ------------------------------------------
-let a = 10;
+// // ------------------------------------------
+// let a = 10;
+
+// function one() {
+
+//     function two() {
+//         console.log(a);
+//     }
+
+//     return two;
+// }
+
+// function three() {
+
+//     let a = 30;
+
+//     const fn = one();
+
+//     fn();
+// }
+
+// three(); // 10
+
+// --------------------------------
+let x = 10;
 
 function one() {
 
+    let x = 20;
+
     function two() {
-        console.log(a);
+
+        console.log(x);
+
     }
 
-    return two;
+    function three() {
+
+        let x = 30;
+
+        two(); 
+
+    }
+
+    three();
 }
 
-function three() {
-
-    let a = 30;
-
-    const fn = one();
-
-    fn();
-}
-
-three(); // 10
+one(); // 20
