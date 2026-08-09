@@ -32,23 +32,37 @@
 
 // ---------------------------------------------
 
-function outer() {
+// function outer() {
 
-    let count = 0;
+//     let count = 0;
 
-    function inner() {
-        count++;
-        console.log(count);
-    }
+//     function inner() {
+//         count++;
+//         console.log(count);
+//     }
 
-    return inner;
-}
+//     return inner;
+// }
 
-const counter = outer();
+// const counter = outer();
 
-counter();
-counter();
-counter();
+// counter();
+// counter();
+// counter();
 // 1
 // 2
 // 3
+
+// ----------------------------------------
+let a = 10;
+
+function one() {
+    console.log(a);
+}
+
+function two() {
+    let a = 20;
+    one();
+}
+
+two();
