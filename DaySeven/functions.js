@@ -16,3 +16,5 @@
 const add = function (a,b){
     return a+b;
 }
+add(20,10);
+
