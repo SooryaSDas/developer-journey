@@ -30,19 +30,22 @@
 
 // --------------------------------------
 
-function num(a,b){
-    console.log(a);
-    console.log(b);
+// function num(a,b){
+//     console.log(a);
+//     console.log(b);
 
-    console.log(arguments[0]);
-    console.log(arguments[1]);
-    console.log(arguments[2]);
+//     console.log(arguments[0]);
+//     console.log(arguments[1]);
+//     console.log(arguments[2]);
 
-}
-num(10,20,30);
-// result 
-// 10
-// 20
-// 10
-// 20
-// 30
+// }
+// num(10,20,30);
+// // result 
+// // 10
+// // 20
+// // 10
+// // 20
+// // 30
+
+// --------------------------------------
+

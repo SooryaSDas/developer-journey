@@ -43,4 +43,19 @@ add(10,10); // 20
 parameters - define in the function definition (a,b), Parameters are placeholders for values.
 Arguments - arguments are actual values 
 
-/// What happens when add(10, 20) runs?
+// arguments
+Parameter
+↓
+Variable in function definition
+
+Argument
+↓
+Value passed during function call
+
+Default Parameter
+↓
+Fallback value when argument is missing
+
+arguments
+↓
+Object containing arguments passed to a regular function
