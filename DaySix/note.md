@@ -90,3 +90,22 @@ And there is only one i:
       3    3    3
 
 
+let
+
+Now JavaScript creates a separate i for each iteration.
+Iteration 1
+i = 0
+ ↓
+callback remembers this i
+
+Iteration 2
+i = 1
+ ↓
+callback remembers this i
+
+Iteration 3
+i = 2
+ ↓
+callback remembers this i
+
+The callback remembers/accesses its lexical environment. With var, all callbacks access the same i; with let, each iteration has its own i binding.
