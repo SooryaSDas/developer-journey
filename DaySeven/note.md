@@ -59,3 +59,12 @@ Fallback value when argument is missing
 arguments
 ↓
 Object containing arguments passed to a regular function
+
+
+/// return
+the return do 2 things:
+1. it send a value back where the function was called
+2.it immediately stoped the function execution
+return immediately ends the current function execution and sends a value back to the caller.
+
+// 
