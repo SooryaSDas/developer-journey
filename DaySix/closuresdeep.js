@@ -68,28 +68,38 @@
 // ------------------------------------------
 // multiple functions
 
-function outer() {
-    let count = 0;
+// function outer() {
+//     let count = 0;
 
-    function increase() {
-        count++;
-        console.log(count);
-    }
+//     function increase() {
+//         count++;
+//         console.log(count);
+//     }
 
-    function decrease() {
-        count--;
-        console.log(count);
-    }
+//     function decrease() {
+//         count--;
+//         console.log(count);
+//     }
 
-    return {
-        increase,
-        decrease
-    };
+//     return {
+//         increase,
+//         decrease
+//     };
+// }
+
+// const counter = outer();
+// counter.increase(); // 1
+// counter.increase(); // 2
+// counter.decrease(); // 1
+
+// --------------------------------------
+
+// Common Interview Trap — var + setTimeout
+
+for (var i = 0; i < 3; i++) {
+    setTimeout(() => {
+        console.log(i);
+    }, 1000);
 }
-
-const counter = outer();
-counter.increase(); // 1
-counter.increase(); // 2
-counter.decrease(); // 1
-
-// --------------------------------
+// output 
+// 333
