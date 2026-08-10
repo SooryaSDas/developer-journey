@@ -63,3 +63,30 @@ inner finds name
 "Soorya"
 
 A closure allows a function to remember variables from the place where it was created, even after that outer function has finished.
+
+
+for (var i = 0; i < 3; i++) {
+    setTimeout(() => {
+        console.log(i);
+    }, 1000);
+}
+// output 
+// 333
+
+The callbacks don't remember the value of i.
+They remember/access the variable i.
+And there is only one i:
+          ONE i
+           ↓
+      ┌─────────┐
+      │ i = 3   │
+      └────┬────┘
+           │
+      ┌────┼────┐
+      ↓    ↓    ↓
+     CB1  CB2  CB3
+      │    │    │
+      ↓    ↓    ↓
+      3    3    3
+
+
