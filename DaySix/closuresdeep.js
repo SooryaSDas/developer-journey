@@ -31,5 +31,15 @@
 
 // ----------------------------------------
 
+function counter(){
+    let count = 0;
+    return function inner(){
+        count++;
+        console.log(count);
+    }
 
-
+}
+const counterfn = counter();
+counterfn(); // 1
+counterfn(); // 2
+counterfn(); // 3
