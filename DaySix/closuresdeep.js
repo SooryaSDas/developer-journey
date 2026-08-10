@@ -96,10 +96,22 @@
 
 // Common Interview Trap — var + setTimeout
 
-for (var i = 0; i < 3; i++) {
+// for (var i = 0; i < 3; i++) {
+//     setTimeout(() => {
+//         console.log(i);
+//     }, 1000);
+// }
+// output 
+// 333
+
+
+for (let i = 0; i < 3; i++) {
     setTimeout(() => {
         console.log(i);
     }, 1000);
 }
-// output 
-// 333
+output 
+0
+1
+2
+// ---------------------------------------------
