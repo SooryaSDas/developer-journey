@@ -67,4 +67,5 @@ the return do 2 things:
 2.it immediately stoped the function execution
 return immediately ends the current function execution and sends a value back to the caller.
 
-// 
+// first class function
+it's a function that js allows to store in varibles, pass as an argument, and return from another function.
