@@ -31,6 +31,20 @@
 
 // ----------------------------------------
 
+// function counter(){
+//     let count = 0;
+//     return function inner(){
+//         count++;
+//         console.log(count);
+//     }
+
+// }
+// const counterfn = counter();
+// counterfn(); // 1
+// counterfn(); // 2
+// counterfn(); // 3
+
+// -----------------------------------------------
 function counter(){
     let count = 0;
     return function inner(){
@@ -40,6 +54,13 @@ function counter(){
 
 }
 const counterfn = counter();
-counterfn(); // 1
-counterfn(); // 2
-counterfn(); // 3
+console.log(counter());
+console.log(counter());
+console.log(counter());
+
+console.log(count);
+// output
+// [Function: inner]
+// [Function: inner]
+// [Function: inner]
+// ReferenceError: count is not defined
