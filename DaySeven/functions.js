@@ -12,3 +12,7 @@ const add = function(a,b){
 add(10, 20);
 
 // -------------------------------------
+// Anonymous Function
+const add = function (a,b){
+    return a+b;
+}
