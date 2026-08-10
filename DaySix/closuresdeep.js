@@ -14,18 +14,22 @@
 // counter(); // 3
 
 // ------------------------------------
-function outer() {
-    let count = 0;
+// function outer() {
+//     let count = 0;
 
-    function inner() {
-        count++;
-        console.log(count);
-    }
+//     function inner() {
+//         count++;
+//         console.log(count);
+//     }
 
-    return inner;
-}
- outer();
+//     return inner;
+// }
+//  outer();
 
  // nothing will print 
 //  Because outer() only returns the inner function. It does not call inner().
+
+// ----------------------------------------
+
+
 
