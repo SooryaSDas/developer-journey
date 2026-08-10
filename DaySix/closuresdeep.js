@@ -45,22 +45,51 @@
 // counterfn(); // 3
 
 // -----------------------------------------------
-function counter(){
+// function counter(){
+//     let count = 0;
+//     return function inner(){
+//         count++;
+//         console.log(count);
+//     }
+
+// }
+// const counterfn = counter();
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+// console.log(count);
+// // output
+// // [Function: inner]
+// // [Function: inner]
+// // [Function: inner]
+// // ReferenceError: count is not defined
+
+// ------------------------------------------
+// multiple functions
+
+function outer() {
     let count = 0;
-    return function inner(){
+
+    function increase() {
         count++;
         console.log(count);
     }
 
-}
-const counterfn = counter();
-console.log(counter());
-console.log(counter());
-console.log(counter());
+    function decrease() {
+        count--;
+        console.log(count);
+    }
 
-console.log(count);
-// output
-// [Function: inner]
-// [Function: inner]
-// [Function: inner]
-// ReferenceError: count is not defined
+    return {
+        increase,
+        decrease
+    };
+}
+
+const counter = outer();
+counter.increase(); // 1
+counter.increase(); // 2
+counter.decrease(); // 1
+
+// --------------------------------
