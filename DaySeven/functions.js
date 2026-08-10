@@ -21,9 +21,28 @@
 // ------------------------------------
 // "arguments" Object
 
-function add(a,b){
-    console.log(arguments);
-}
+// function add(a,b){
+//     console.log(arguments);
+// }
 
-add(10,20,30,40) // [Arguments] { '0': 10, '1': 20, '2': 30, '3': 40 }
+// add(10,20,30,40) // [Arguments] { '0': 10, '1': 20, '2': 30, '3': 40 }
 // // the arguments object contains all arguments passed to the function. 
+
+// --------------------------------------
+
+function num(a,b){
+    console.log(a);
+    console.log(b);
+
+    console.log(arguments[0]);
+    console.log(arguments[1]);
+    console.log(arguments[2]);
+
+}
+num(10,20,30);
+// result 
+// 10
+// 20
+// 10
+// 20
+// 30
