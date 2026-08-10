@@ -6,10 +6,10 @@
 
 // -------------------------------------
 // Function Expression - Here the function is created and assigned to a variable.
-const add = function(a,b){
-    return a+b;
-}
-add(10, 20);
+// const add = function(a,b){
+//     return a+b;
+// }
+// add(10, 20);
 
 // -------------------------------------
 // Anonymous Function
