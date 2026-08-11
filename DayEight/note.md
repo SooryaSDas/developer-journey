@@ -61,3 +61,16 @@ Arrow function:
 doesn't have its own this
   ↓
 uses surrounding this
+
+"Arrow functions don't have their own this; they lexically inherit this from their surrounding scope."
+                this
+                 │
+        ┌────────┴────────┐
+        │                 │
+ Regular function    Arrow function
+        │                 │
+        ↓                 ↓
+ Call determines      Lexical/surrounding
+     this                  this
+
+
