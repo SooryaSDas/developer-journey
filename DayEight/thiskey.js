@@ -105,8 +105,50 @@ const per = {
         console.log(this.name);
     }
 }
-per.name = "soorya";
-per.function(); // soorya
+// per.name = "soorya";
+// per.function(); // soorya
 
 // -----------------------------
+// this and Nested Functions
 
+const user = {
+    name : "arya",
+    greet(){
+        function inner(){
+            console.log(this);
+        }
+        inner();
+    }
+}
+// user.greet(); // global value, because inner function is not a method of user object, so this refers to global object
+
+// ----------------------------------
+
+const users = {
+    name: "Soorya",
+
+    greet() {
+        const test = () => {
+            console.log(this);
+        };
+
+        test();
+    }
+};
+
+// users.greet(); // { name: 'Soorya', greet: [Function: greet] } // this refers to users object because arrow function does not have its own this, it uses the this value from the enclosing lexical context, which is the greet method of the users object.
+
+// ----------------------------------
+
+const use = {
+    name: "Soorya",
+    fn(){
+        function inner(){
+            console.log(this);
+        } 
+        inner();      
+    }
+}
+// use.fn(); // global value, because inner function is not a method of use object, so this refers to global object
+
+// ----------------------------------

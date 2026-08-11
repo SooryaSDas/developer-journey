@@ -46,3 +46,18 @@ this
 How was the function called?
         ↓
 What is `this`?
+
+7. this and Nested Functions
+This is one of the biggest differences between regular functions and arrow functions.
+Arrow functions do not have their own this. They take this from their surrounding lexical context.
+Regular nested function:
+test()
+  ↓
+gets its own this
+
+Arrow function:
+() => {}
+  ↓
+doesn't have its own this
+  ↓
+uses surrounding this
