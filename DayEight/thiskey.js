@@ -60,4 +60,13 @@ const testing = {
 testing.greet(); // { greet: [Function: greet] }
 
 // ----------------------------
+function test1(){
+    console.log(this);
+}
+test1(); // global
+
+const obj1 = {
+    test1: test1,
+}
+obj1.test1(); // { test1: [Function: test1] } // this refers to obj1
 

@@ -19,4 +19,4 @@ Soorya
 object - it refers to object name
 function - it refers to global
 
-4. 
+4. this is determined by the call site
