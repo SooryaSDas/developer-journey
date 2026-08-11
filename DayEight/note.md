@@ -16,3 +16,7 @@ Output:
 Soorya
 
 3. 
+object - it refers to object name
+function - it refers to global
+
+4. 

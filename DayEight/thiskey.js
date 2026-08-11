@@ -17,5 +17,47 @@ const obj = {
         console.log(this);
     }
 }
-obj.greet(); // { name: 'sandra', greet: [Function: greet] }
+// obj.greet(); // { name: 'sandra', greet: [Function: greet] }
 // this refers to: person
+
+// ----------------------------------------
+// this is NOT the function itself
+
+function fn(){
+    console.log(this)
+}
+// fn(); // global value
+
+// -----------------------------------------
+// Same function, different this
+
+const person1 = {
+    name : "rehna",
+    greet: function (){
+        console.log(this.name)
+    }
+}
+
+const person2 = {
+    name : "alfiya",
+    greet: person1.greet
+}
+
+// person2.greet() // alfiya
+
+// -----------------------------
+
+function test(){
+    console.log(this);
+}
+test();
+//-------------- global
+const testing = {
+    greet: function (){
+        console.log(this)
+    }
+}
+testing.greet(); // { greet: [Function: greet] }
+
+// ----------------------------
+
