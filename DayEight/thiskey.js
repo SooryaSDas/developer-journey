@@ -81,9 +81,32 @@ function test2(){
 // test2(); // global
 
 //-----------------------------
-"use strict"
+// with strict mode, this will be undefined
+// "use strict"
 
 function fun() {
     console.log(this);
 }
-fun(); // undefined
+// fun(); // undefined
+
+// -----------------------------
+const obj2 = {
+    name: "soorya",
+    fn: function(){
+        console.log(this);
+    }
+}
+// obj2.fn(); // { name: 'soorya', fn: [Function: fn] } // this refers to obj2
+
+// -----------------------------
+const per = {
+    name : "soo",
+    function(){
+        console.log(this.name);
+    }
+}
+per.name = "soorya";
+per.function(); // soorya
+
+// -----------------------------
+

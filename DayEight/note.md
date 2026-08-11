@@ -33,3 +33,16 @@ Soorya
     this
     ↓
     undefined
+
+6. Lexical scope vs this keyword
+
+Lexical scope
+Where was the function written?
+        ↓
+Which variables can it access?
+
+
+this
+How was the function called?
+        ↓
+What is `this`?
