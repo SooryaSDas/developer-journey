@@ -50,11 +50,34 @@
 // --------------------------------------
 
 // higher order functions
-function greet(){
+// function greet(){
+//     console.log("Hello");
+// }
+// function execute(fn){
+//     fn();
+// }
+
+// execute(greet); // Hello
+
+
+// ---------------------------------------
+// HOF vs Callback
+
+function greet() {
     console.log("Hello");
 }
-function execute(fn){
+
+function execute(fn) {
     fn();
 }
 
-execute(greet); // Hello
+execute(greet);
+
+// // Higher-Order Function
+// execute
+// Because it receives a function.
+
+// // Callback Function
+// greet
+// Because we pass it into another function and that function calls it.
+
