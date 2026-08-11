@@ -107,10 +107,34 @@
 
 // ---------------------------
 
-function greet() {
-    console.log("Hello");
+// function greet() {
+//     console.log("Hello");
+// }
+
+// const result = greet();
+
+// console.log(result); // Hello
+
+/// -----------------------------
+
+function one() {
+    console.log("One");
+
+    function two() {
+        console.log("Two");
+    }
+
+    return two;
 }
 
-const result = greet();
+const result = one();
 
-console.log(result); // Hello
+console.log("Middle");
+
+result();
+
+// result
+// One
+// Middle
+// Two
+

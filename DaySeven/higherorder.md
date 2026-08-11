@@ -50,3 +50,38 @@ But "done" is a string, not a function.
 So you get:
 Hello
 TypeError: fn is not a function
+
+3. Functions
+A function is a reusable block of code designed to perform a specific task. It helps us organize code and avoid repetition.
+
+4. output
+function one() {
+    console.log("One");
+
+    function two() {
+        console.log("Two");
+    }
+
+    return two;
+}
+
+const result = one();
+
+console.log("Middle");
+
+result();
+
+// result
+// One
+// Middle
+// Two
+
+const result = one(); 
+one() executes.So:One
+Then:return two;
+Notice:return two
+NOT:return two()
+We're returning the function itself, not executing it.
+So:result → two function
+console.log("Middle");
+Output:Middle
