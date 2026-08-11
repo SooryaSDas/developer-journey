@@ -156,3 +156,18 @@ const us = ()=>{
     console.log(this);
 }
 // us(); // global value, because arrow function does not have its own this, it uses the this value from the enclosing lexical context, which is the global scope in this case.
+
+// ---------------------------------
+const user1 = {
+    name : "Soorya",
+    greet(){
+        const inner =()=>{
+            console.log(this);
+        }
+        inner();
+    }
+}
+user1.greet(); // { name: 'Soorya', greet: [Function: greet] } // this refers to user1 object because arrow function does not have its own this, it uses the this value from the enclosing lexical context, which is the greet method of the user1 object.
+
+// ---------------------------------
+
