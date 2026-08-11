@@ -69,3 +69,50 @@ return immediately ends the current function execution and sends a value back to
 
 // first class function
 it's a function that js allows to store in varibles, pass as an argument, and return from another function.
+<!-- Example -->
+function sayHello() {
+    console.log("Hello!");
+}
+
+// 1. Store function in a variable
+const fn = sayHello;
+
+// 2. Call it
+fn();
+
+Output:
+Hello!
+
+<!-- Passing a function -->
+function sayHello() {
+    console.log("Hello!");
+}
+
+function execute(callback) {
+    callback();
+}
+
+execute(sayHello);
+
+Output:
+Hello!
+
+<!-- Returning a function -->
+function outer() {
+
+    function inner() {
+        console.log("Hello!");
+    }
+    return inner;
+}
+
+const fn = outer();
+fn();
+
+Output:
+Hello!
+
+So First-Class Functions allow you to:
+1. Store     → const fn = sayHello
+2. Pass      → execute(sayHello)
+3. Return    → return inner
