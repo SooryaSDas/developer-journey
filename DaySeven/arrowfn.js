@@ -5,8 +5,11 @@ const greet = ()=>{
 greet(); // Hello
 
 // Implicit Return
+const addtwo = (a,b)=> a+b;
+addtwo(10,10); // 20
+
+// Explicit Return
 const add = (a,b)=>{
-    let result = a+b;
-    return (console.log(result))
+    return a+b;
 }
-add(10,10); // 20
+add(20,30) // 50
