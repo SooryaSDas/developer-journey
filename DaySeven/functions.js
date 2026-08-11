@@ -49,3 +49,12 @@
 
 // --------------------------------------
 
+// higher order functions
+function greet(){
+    console.log("Hello");
+}
+function execute(fn){
+    fn();
+}
+
+execute(greet); // Hello
