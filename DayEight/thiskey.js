@@ -50,23 +50,40 @@ const person2 = {
 function test(){
     console.log(this);
 }
-test();
+// test();
 //-------------- global
 const testing = {
     greet: function (){
         console.log(this)
     }
 }
-testing.greet(); // { greet: [Function: greet] }
+// testing.greet(); // { greet: [Function: greet] }
 
 // ----------------------------
 function test1(){
     console.log(this);
 }
-test1(); // global
+// test1(); // global
 
 const obj1 = {
     test1: test1,
 }
-obj1.test1(); // { test1: [Function: test1] } // this refers to obj1
+// obj1.test1(); // { test1: [Function: test1] } // this refers to obj1
 
+// --------------------------------------
+function test2(){
+    let a = 10;
+    function inner1(){
+     console.log(this);
+    }
+    return inner1();
+}
+// test2(); // global
+
+//-----------------------------
+"use strict"
+
+function fun() {
+    console.log(this);
+}
+fun(); // undefined
