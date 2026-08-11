@@ -152,3 +152,7 @@ const use = {
 // use.fn(); // global value, because inner function is not a method of use object, so this refers to global object
 
 // ----------------------------------
+const us = ()=>{
+    console.log(this);
+}
+// us(); // global value, because arrow function does not have its own this, it uses the this value from the enclosing lexical context, which is the global scope in this case.
