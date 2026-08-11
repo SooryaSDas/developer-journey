@@ -95,11 +95,22 @@
 
 
 //// 2.
-function greet(){
+// function greet(){
+//     console.log("Hello");
+//     return "done";
+// }
+// function execute(fn){
+//     return fn()
+// }
+// execute(greet()) // TypeError: fn is not a function. beacuse The () after greet means call greet immediately.
+
+
+// ---------------------------
+
+function greet() {
     console.log("Hello");
-    return "done";
 }
-function execute(fn){
-    return fn()
-}
-execute(greet()) // TypeError: fn is not a function. beacuse The () after greet means call greet immediately.
+
+const result = greet();
+
+console.log(result); // Hello
