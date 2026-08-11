@@ -73,4 +73,8 @@ uses surrounding this
  Call determines      Lexical/surrounding
      this                  this
 
+-----------------
+call(), apply(), bind()
+
+These three methods are used to control the value of this when working with regular functions.
 
