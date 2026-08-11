@@ -63,15 +63,15 @@
 // ---------------------------------------
 // HOF vs Callback
 
-function greet() {
-    console.log("Hello");
-}
+// function greet() {
+//     console.log("Hello");
+// }
 
-function execute(fn) {
-    fn();
-}
+// function execute(fn) {
+//     fn();
+// }
 
-execute(greet);
+// execute(greet);
 
 // // Higher-Order Function
 // execute
@@ -81,3 +81,25 @@ execute(greet);
 // greet
 // Because we pass it into another function and that function calls it.
 
+// ---------------------------------------
+// .// 1. d/f
+
+// function greet(){
+//     console.log("Hello");
+//     return "done";
+// }
+// function execute(fn){
+//     return fn()
+// }
+// execute(greet) // Hello
+
+
+//// 2.
+function greet(){
+    console.log("Hello");
+    return "done";
+}
+function execute(fn){
+    return fn()
+}
+execute(greet()) // TypeError: fn is not a function. beacuse The () after greet means call greet immediately.
