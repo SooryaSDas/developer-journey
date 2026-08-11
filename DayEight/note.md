@@ -1,0 +1,18 @@
+1. What is this?
+this refers to the object/context that is calling the function.
+this is determined by how a function is called, not where the function was writtern.
+
+2. const person = {
+    name : "Soorya",
+    greet : function (){
+        console.log(this.name);
+    }
+    
+}
+person.greet();
+
+is equivalent to: person.name
+Output:
+Soorya
+
+3. 
