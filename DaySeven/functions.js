@@ -127,14 +127,25 @@ function one() {
     return two;
 }
 
-const result = one();
+// const result = one();
 
-console.log("Middle");
+// console.log("Middle");
 
-result();
+// result();
 
 // result
 // One
 // Middle
 // Two
+
+// -------------------------
+const test = () => {
+    10 + 20;
+};
+
+console.log(test()); // undefined
+
+// -------------------------
+
+
 

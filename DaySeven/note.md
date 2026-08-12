@@ -31,9 +31,7 @@ const add = function calculate(a, b) {
 You normally call it using: add(10, 20);
 calculate(10, 20); // ❌
 because calculate isn't available as a normal variable outside the function expression.
-
 one of the major advantage of named function expression is debugging and recursion. 
-
 
 /// Parameters & Arguments
 function add (a,b){
