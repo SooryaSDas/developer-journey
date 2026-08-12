@@ -74,7 +74,7 @@ uses surrounding this
      this                  this
 
 -----------------
-<!-- call(), apply(), bind() -->
+8. <!-- call(), apply(), bind() -->
 
 These three methods are used to control the value of this when working with regular functions.
 
@@ -112,3 +112,29 @@ newGreet
 new function
  ↓
 this → user
+
+
+9. call vs bind
+call
+greet.call(user);
+execute greet now with this = user
+
+bind
+const wish = greet.bind(user)
+wish();
+Create a new function where this = user. Execute it later.
+
+CALL
+ ↓
+Call it NOW
+
+APPLY
+ ↓
+Call it NOW with an Array
+
+BIND
+ ↓
+Bind it for LATER
+
+This works with regular functions because regular functions can have their this value controlled by call, apply, and bind.
+Arrow functions have lexical this. So call(), apply(), and bind() cannot change an arrow function's this.

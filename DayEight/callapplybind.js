@@ -67,4 +67,16 @@ const names = {
     name : "soorya"
 }
 const values = callingbind.bind(names);
-values(); // soorya
+// values(); // soorya
+
+// --------------------------------------------
+// with arrow function
+const fn = (message)=>{
+    console.log(message + ","+ this.name)
+    console.log(this)
+}
+const name1 = {
+    name : "rehna"
+}
+const bindex = fn.bind(name1, "hi");
+bindex(); // hi,undefined. Arrow functions have lexical this. So call(), apply(), and bind() cannot change an arrow function's this.
