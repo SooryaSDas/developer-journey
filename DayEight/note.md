@@ -78,3 +78,10 @@ call(), apply(), bind()
 
 These three methods are used to control the value of this when working with regular functions.
 
+call()
+ ↓
+arguments individually
+
+apply()
+ ↓
+arguments as an array
