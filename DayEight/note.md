@@ -74,7 +74,7 @@ uses surrounding this
      this                  this
 
 -----------------
-call(), apply(), bind()
+<!-- call(), apply(), bind() -->
 
 These three methods are used to control the value of this when working with regular functions.
 
@@ -85,3 +85,17 @@ arguments individually
 apply()
  ↓
 arguments as an array
+
+1. call
+arguments individually
+function.call(thisValue, argument1, argument2, ...);
+greet.call(user,"hello","welcome")
+
+2. Apply
+apply() does almost the same thing as call().
+The main difference is how arguments are provided.
+Arguments are passed inside an array:
+function.call(thisValue, [argument1, argument2, ...]);
+greet.apply(user, ["hello","welcome])
+
+3. 

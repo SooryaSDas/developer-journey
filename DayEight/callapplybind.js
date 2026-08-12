@@ -29,8 +29,31 @@ const callob = {
     name : "soorya"
 }
 
-callex.call(callob, "Good Morning", "Have a Nice Day"); // Good Morning soorya Have a Nice Day
+// callex.call(callob, "Good Morning", "Have a Nice Day"); // Good Morning soorya Have a Nice Day
  
 // -----------------------------------
-
 /// apply - argument as an array
+function persons(age, city){
+    console.log(this.name);
+    console.log(age);
+    console.log(city);
+}
+const person1 = {
+    name : "soorya"
+}
+person1.name = "sandra"
+const person2 = {
+    name : person1.name
+}
+
+persons.apply(person1,[20,"trivandrum"]);
+// output
+// sandra
+// 20
+// trivandrum
+
+persons.apply(person2,[25,"trivandrum"]);
+// output
+// sandra
+// 25
+// trivandrum
