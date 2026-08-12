@@ -98,4 +98,17 @@ Arguments are passed inside an array:
 function.call(thisValue, [argument1, argument2, ...]);
 greet.apply(user, ["hello","welcome])
 
-3. 
+3. bind
+bind() is different.
+call() and apply() immediately execute the function.
+But bind() doesn't execute it immediately.
+Instead, it creates a new function with this permanently set to the object you provided.
+greet()
+ ↓
+not executed
+
+newGreet
+ ↓
+new function
+ ↓
+this → user

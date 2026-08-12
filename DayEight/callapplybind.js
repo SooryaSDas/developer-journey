@@ -46,14 +46,25 @@ const person2 = {
     name : person1.name
 }
 
-persons.apply(person1,[20,"trivandrum"]);
+// persons.apply(person1,[20,"trivandrum"]);
 // output
 // sandra
 // 20
 // trivandrum
 
-persons.apply(person2,[25,"trivandrum"]);
+// persons.apply(person2,[25,"trivandrum"]);
 // output
 // sandra
 // 25
 // trivandrum
+
+// ----------------------------------------
+// bind - it create a new function with this and execute it later
+function callingbind(){
+    console.log(this.name);
+}
+const names = {
+    name : "soorya"
+}
+const values = callingbind.bind(names);
+values(); // soorya
