@@ -143,9 +143,23 @@ const test = () => {
     10 + 20;
 };
 
-console.log(test()); // undefined
+// console.log(test()); // undefined
 
 // -------------------------
 
+"use strict";
 
+const user = {
+    name: "Soorya",
+
+    greet() {
+        function test() {
+            console.log(this);
+        }
+
+        test();
+    }
+};
+
+user.greet();
 
