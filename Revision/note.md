@@ -181,4 +181,41 @@ greet   → Callback
 this is determined by how the function is called.
 Arrow functions: Do not have their own this; they use the surrounding lexical this.
 
-25. 
+25. this in functions
+const user = {
+    name: "Soorya",
+
+    regular: function () {
+        console.log(this.name);
+    },
+
+    arrow: () => {
+        console.log(this.name);
+    }
+};
+
+user.regular(); // Soorya
+user.arrow(); // undefined
+regular():
+
+user.regular()
+      ↓
+this → user
+      ↓
+this.name → "Soorya"
+So:Soorya
+
+But arrow() does not make:
+this → user
+Arrow functions don't have their own this.
+They capture this from the surrounding lexical context.
+In a typical browser script context, this can result in undefined for this.name; in an ES module, it is also undefined because top-level this is undefined.
+regular function
+      ↓
+this determined by CALL
+
+arrow function
+      ↓
+doesn't have its own this
+      ↓
+takes surrounding this
