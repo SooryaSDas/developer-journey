@@ -120,3 +120,38 @@ counter(); // 1
 counter(); // 2
 
 16. Functions
+Function Declaration
+function one (){
+    console.log("one");
+}
+one();
+
+Function Expression - just assign to a variable
+const fn = function one(){
+    console.log("one");
+}
+
+17. Arrow Function
+const add = (a, b) => a + b;
+
+18. Parameters vs Arguments
+function add(a, b) {
+    return a + b;
+}
+add(10, 20);
+a, b       → Parameters
+10, 20     → Arguments
+
+19. Return
+function test() {
+    return 10;
+
+    console.log("Hello");
+}
+"Hello" will never execute because return ends that function execution.
+
+20. Function vs Function Call
+greet - Reference to the function.
+greet() - Execute the function.
+
+21. First-Class Functions
