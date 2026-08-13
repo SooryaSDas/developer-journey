@@ -20,4 +20,103 @@ Global Lexical Environment
 4. Lexical Scope
 lexical scope depends on where the code is writtern not where the function is called. 
 
-5. 
+5. Scope
+function scope
+block scope
+global scope
+
+6. Hoisting + TDZ
+Hoisting
+JavaScript's creation phase makes declarations available before normal execution reaches them.
+
+TDZ
+The period where let/const exist in their scope but cannot be accessed before initialization.
+
+7. Execution Context
+Execution Context
+        ↓
+Memory Creation Phase
+        ↓
+Code Execution Phase
+
+8. Global Execution Context
+JavaScript starts
+      ↓
+Global Execution Context created
+      ↓
+Global code executes
+      ↓
+Functions may create their own execution contexts
+      ↓
+Program finishes
+
+9. Call Stack
+Global Execution Context
+        ↓
+Function Execution Context
+        ↓
+Function Execution Context
+eveything is done under the call stack
+LIFO
+Last In
+First Out
+
+10. Stack Overflow
+The Call Stack keeps growing until the stack limit is exceeded.
+RangeError:
+Maximum call stack size exceeded
+
+11. Lexical Environment
+A Lexical Environment contains the identifiers available in a particular scope and a reference to its outer lexical environment
+Current Lexical Environment
+          ↓
+Outer Lexical Environment
+          ↓
+Global Lexical Environment
+
+12. Lexical Scope
+Lexical scope depends on where the code is written, not where the function is called.
+
+13. Variable Lookup / Scope Chain
+Current Scope
+      ↓
+Outer Scope
+      ↓
+Outer Scope
+      ↓
+Global Scope
+      ↓
+ReferenceError
+
+14. Shadowing
+a same variable with same name is declared inside of an block is know as shadowing
+let a = 10;
+
+function test() {
+    let a = 20;
+
+    console.log(a);
+}
+
+test(); // 20
+
+console.log(a); // 10
+
+15. Closures
+function outer() {
+    let count = 0;
+
+    function inner() {
+        count++;
+        console.log(count);
+    }
+
+    return inner;
+}
+
+const counter = outer();
+
+counter(); // 1
+counter(); // 2
+
+16. Functions
