@@ -180,3 +180,5 @@ greet   → Callback
 24. this
 this is determined by how the function is called.
 Arrow functions: Do not have their own this; they use the surrounding lexical this.
+
+25. 
