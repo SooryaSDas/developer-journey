@@ -155,3 +155,28 @@ greet - Reference to the function.
 greet() - Execute the function.
 
 21. First-Class Functions
+stored in variables
+passed as arguments
+returned from functions
+stored in objects/arrays
+
+22. Higher-Order Functions
+accepts a function as an argument, or returns a function
+
+23. Callback functions
+A function passed to another function to be invoked by it is a callback.
+function greet() {
+    console.log("Hello");
+}
+
+function execute(fn) {
+    fn();
+}
+execute(greet);
+
+execute → Higher-Order Function
+greet   → Callback
+
+24. this
+this is determined by how the function is called.
+Arrow functions: Do not have their own this; they use the surrounding lexical this.
