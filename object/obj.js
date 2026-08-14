@@ -17,8 +17,12 @@ const user = {
 const user1 = new Object();
 user1.name = "sandra";
 user1.place = "attingal";
-console.log(user1); // { name: 'sandra', place: 'attingal' }
+// console.log(user1); // { name: 'sandra', place: 'attingal' }
 
 
 // Accessing Object Properties
+// 1) dot notation
+console.log(user.name); // soorya
+// 2) Bracket notation
+console.log(user["place"]) // attingal
 

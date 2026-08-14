@@ -42,3 +42,9 @@ console.log(user);
 }
 
 4. Accessing Object Properties
+1) Dot notation
+console.log(user.name);
+2) Bracket notation
+console.log(user["name"]);
+
+5. 
