@@ -21,3 +21,24 @@ When a function is stored inside an object, we commonly call it a method.
 console.log(user.name); - Dot notation
 console.log(user["name"]); - Bracket notation
 
+3. Creating Objects in JavaScript
+
+1) Object Literal
+const person = {
+    name : "soorya",
+    age : 25
+}
+
+2) new Object()
+const user = new Object()
+This creates an empty object.
+Then you can add properties:
+user.name = "Soorya";
+user.age = 28;
+console.log(user);
+{
+    name: "Soorya",
+    age: 28
+}
+
+4. 
