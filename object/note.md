@@ -47,4 +47,6 @@ console.log(user.name);
 2) Bracket notation
 console.log(user["name"]);
 
-5. 
+5. Adding Properties
+JavaScript objects are generally mutable.
+user.name = "kavya"

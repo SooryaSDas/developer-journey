@@ -22,7 +22,12 @@ user1.place = "attingal";
 
 // Accessing Object Properties
 // 1) dot notation
-console.log(user.name); // soorya
+// console.log(user.name); // soorya
 // 2) Bracket notation
-console.log(user["place"]) // attingal
+// console.log(user["place"]) // attingal
 
+// Adding Properties
+user1.name = "yesu";
+console.log(user1); // { name: 'yesu', place: 'attingal' }
+user1.age = 25;
+console.log(user1) // { name: 'yesu', place: 'attingal', age: 25 }
