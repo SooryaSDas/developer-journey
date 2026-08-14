@@ -20,3 +20,5 @@ user1.place = "attingal";
 console.log(user1); // { name: 'sandra', place: 'attingal' }
 
 
+// Accessing Object Properties
+

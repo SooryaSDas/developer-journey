@@ -41,4 +41,4 @@ console.log(user);
     age: 28
 }
 
-4. 
+4. Accessing Object Properties
