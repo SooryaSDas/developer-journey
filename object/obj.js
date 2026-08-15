@@ -113,10 +113,12 @@ const pricelist = [
         price : 600
     }
 ]
-console.log(pricelist); 
+// console.log(pricelist); 
 // [
 //   { product: 'apple', price: 500 },
 //   { product: 'orange', price: 200 },
 //   { product: 'avacado', price: 600 }
 // ]
+
+console.log(pricelist[0]) // { product: 'apple', price: 500 }
 
