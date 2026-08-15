@@ -175,3 +175,5 @@ const {
 } = mydata;
 console.log(place) // attingal
 
+
+// Object Spread Operator ... 

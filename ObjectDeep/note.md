@@ -35,4 +35,4 @@ eg : const user = {
 const {name, place } = user
 console.log(name);
 
-8. 
+8. Object Spread Operator ...
