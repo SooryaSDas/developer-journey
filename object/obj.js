@@ -84,7 +84,7 @@ const employees = {
 // }
 
 employees.address.pincode = 695103;
-console.log(employees)
+// console.log(employees)
 // {
 //       name: 'soorya',
 //   address: {
@@ -93,3 +93,6 @@ console.log(employees)
 //     landmark: 'near avanavanchery school'
 //   }
 // }
+
+delete employees.address.landmark;
+console.log(employees) // { name: 'soorya', address: { street: 'attingal', pincode: 695103 } }
