@@ -53,3 +53,12 @@ const user2 = {
 // user2.wish("soorya"); // Good Morning from sunu to soorya
 
 // object method in arrow function
+const obj3 = {
+    istreu : false,
+    greet: (a,b)=>{
+        console.log(a+b);
+        return "done";
+         console.log(a+b); // unreachable code
+    }
+}
+obj3.greet(10,20); // 30
