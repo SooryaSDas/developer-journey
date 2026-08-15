@@ -161,3 +161,30 @@ anotherUser.name = "Arun";
 // console.log(anotherUser.name);
 // // Arun
 // // Arun
+// -----------------------------------
+const user4 = {
+    name: "Soorya"
+};
+
+user4.name = "Arun";
+
+// console.log(user4.name);  // Arun
+// -----------------------------------
+const user5 = {
+    name: "Soorya"
+};
+
+// user5 = {
+//     name: "Arun"
+// };
+// console.log(user5) // TypeError: Assignment to constant variable.
+// -----------------------------------
+const key = "name";
+
+const users = {
+    name: "Soorya"
+};
+
+// console.log(users[key]); // Soorya
+// console.log(users.key); // undefined
+

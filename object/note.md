@@ -59,3 +59,21 @@ user.hasOwnProperty("name"); // it give result like true or false
 
 8. Using the in operator - check is this exist or not
 console.log("name" in user)
+
+9. object in const
+
+1) const user4 = {
+    name: "Soorya"
+};
+user4.name = "Arun";
+console.log(user4.name);  // Arun - this time the object property was reassinging it's possible
+
+2) const user = {
+    name: "Soorya"
+};
+user = {
+    name: "Arun"
+};
+console.log(user); //  TypeError: Assignment to constant variable. - the full object we can't redeclared or reassign
+
+
