@@ -11,4 +11,19 @@ const user= {
 // [ 'name', 'place', 'age' ]
 
 const count = Object.keys(user);
-console.log(count.length) // 3
+// console.log(count.length) // 3
+
+// 1. forEach
+// Object.keys(user).forEach(key => console.log(key))
+// output
+// name
+// place
+// age
+
+// 2. map
+// Object.keys(user).map(key => console.log(key))
+// output
+// name
+// place
+// age
+
