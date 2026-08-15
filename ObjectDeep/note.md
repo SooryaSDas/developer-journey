@@ -17,3 +17,8 @@ Object.values(user);
 Object.entries() is used when you want to get both the key and the value from an object.
 
 5. for in
+for (let key in user) {
+    console.log(key, user[key]);
+}
+
+6. for...in vs Object.keys()

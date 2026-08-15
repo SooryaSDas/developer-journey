@@ -98,3 +98,35 @@ const keyvalue = Object.keys(user1);
 
 
 // for...in
+for (let key in user) {
+    // console.log(key);
+}
+// name
+// place
+// age
+
+for (let key in user) {
+    // console.log(key, user[key]);
+}
+// name soorya
+// place attingal
+// age 25
+
+
+// for...in vs Object.keys()
+for(let key in user1){
+    console.log(key, user1[key])
+}
+// result
+// name Soorya
+// address { city: 'Kochi', state: 'Kerala' }
+// greet [Function: greet]
+// grow [Function: grow]
+
+for(let key in user){
+    console.log(key, user[key])
+}
+// output
+// name soorya
+// place attingal
+// age 25
