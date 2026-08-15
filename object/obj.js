@@ -40,6 +40,16 @@ delete user1.age;
 // Checking Whether a Property Exists
 "name" in user1
 const check = user1.hasOwnProperty("name");
-console.log(check) // true
+// console.log(check) // true
 
 //. Object Methods
+const user2 = {
+    name : "sunu",
+    wish : function(name){
+        console.log("Good Morning from "+this.name + " to "+ name);
+
+    }
+}
+// user2.wish("soorya"); // Good Morning from sunu to soorya
+
+// object method in arrow function
