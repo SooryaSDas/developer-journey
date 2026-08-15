@@ -144,4 +144,34 @@ const {name, place } = person;
 
 // if we need to change the variable name
 const {name : personname} = person;
-console.log(personname) // soorya
+// console.log(personname) // soorya
+
+// Default values - The default is only used when the property is undefined.
+const {names, age=23} = person;
+// console.log(person) // { name: 'soorya', place: 'attingal', age: 20 }
+
+//
+const user3 = {
+    naam: "Soorya"
+};
+
+const { naam, ages = 28 } = user3;
+
+// console.log(naam); // Soorya
+// console.log(ages); // 28
+
+
+// Nested Object Destructuring
+const mydata = {
+    name : "soorya",
+    address : {
+        places : "attingal",
+        pincode : 695103,
+        street: "avanavanchery"
+    }
+}
+const {
+    address: { places }
+} = mydata;
+console.log(place) // attingal
+
