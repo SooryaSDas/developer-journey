@@ -56,3 +56,6 @@ delete user.name;
 
 7. checking where this property exist
 user.hasOwnProperty("name"); // it give result like true or false
+
+8. Using the in operator - check is this exist or not
+console.log("name" in user)

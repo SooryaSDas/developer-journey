@@ -122,6 +122,8 @@ const pricelist = [
 
 // console.log(pricelist[0]) // { product: 'apple', price: 500 }
 
+// Using the in operator - check is this exist or not
+// console.log("name" in employees) // true
 
 const developer = {
     name: "Soorya",
