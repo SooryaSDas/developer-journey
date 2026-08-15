@@ -50,3 +50,8 @@ console.log(user["name"]);
 5. Adding Properties
 JavaScript objects are generally mutable.
 user.name = "kavya"
+
+6. deleting properties
+delete user.name;
+
+7. checking where this property exist

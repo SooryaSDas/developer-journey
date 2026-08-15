@@ -26,8 +26,18 @@ user1.place = "attingal";
 // 2) Bracket notation
 // console.log(user["place"]) // attingal
 
-// Adding Properties
+// Updating Properties
 user1.name = "yesu";
-console.log(user1); // { name: 'yesu', place: 'attingal' }
+// console.log(user1); // { name: 'yesu', place: 'attingal' }
+// Adding Properties
 user1.age = 25;
-console.log(user1) // { name: 'yesu', place: 'attingal', age: 25 }
+// console.log(user1) // { name: 'yesu', place: 'attingal', age: 25 }
+
+// Deleting Properties
+delete user1.age;
+// console.log(user1); // { name: 'yesu', place: 'attingal' }
+
+// Checking Whether a Property Exists
+"name" in user1
+const check = user1.hasOwnProperty("name");
+console.log(check) // true
