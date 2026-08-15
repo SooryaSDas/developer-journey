@@ -42,8 +42,39 @@ const count = Object.keys(user);
 
 
 const obj = Object.keys(user);
-obj.forEach(key => console.log(key, user[key]))
+// obj.forEach(key => console.log(key, user[key]))
 // result
 // name soorya
 // place attingal
 // age 25
+
+
+
+const user1 = {
+    name: "Soorya",
+    address: {
+        city: "Kochi",
+        state: "Kerala"
+    },
+    greet: function(){
+        console.log(this.name);
+    },
+    grow: ()=>{
+        console.log("arrow fn");
+    }
+};
+
+const keyvalues = Object.keys(user1);
+console.log(keyvalues); // [ 'name', 'address', 'greet', 'grow' ]
+const values = Object.values(user1);
+console.log(values);
+// output
+// [
+//   'Soorya',
+//   { city: 'Kochi', state: 'Kerala' },
+//   [Function: greet],
+//   [Function: grow]
+// ]
+
+
+
