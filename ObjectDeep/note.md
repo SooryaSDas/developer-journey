@@ -22,3 +22,17 @@ for (let key in user) {
 }
 
 6. for...in vs Object.keys()
+for(let key in user){
+    console.log(key, user[key])
+}
+
+7. Object Destructuring
+object destructuring is the shortcut for taking the values from object and putting them into the variables.
+eg : const user = {
+    name : "soorya",
+    place : "attingal"
+}
+const {name, place } = user
+console.log(name);
+
+8. 

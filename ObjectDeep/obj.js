@@ -115,7 +115,7 @@ for (let key in user) {
 
 // for...in vs Object.keys()
 for(let key in user1){
-    console.log(key, user1[key])
+    // console.log(key, user1[key])
 }
 // result
 // name Soorya
@@ -124,9 +124,24 @@ for(let key in user1){
 // grow [Function: grow]
 
 for(let key in user){
-    console.log(key, user[key])
+    // console.log(key, user[key])
 }
 // output
 // name soorya
 // place attingal
 // age 25
+
+
+// Object Destructuring
+const person = {
+    name : "soorya",
+    place: "attingal",
+    age : 20
+}
+const {name, place } = person;
+// console.log(name); // soorya
+// console.log(place); // attingal
+
+// if we need to change the variable name
+const {name : personname} = person;
+console.log(personname) // soorya
