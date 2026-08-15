@@ -95,4 +95,28 @@ employees.address.pincode = 695103;
 // }
 
 delete employees.address.landmark;
-console.log(employees) // { name: 'soorya', address: { street: 'attingal', pincode: 695103 } }
+// console.log(employees) // { name: 'soorya', address: { street: 'attingal', pincode: 695103 } }
+
+
+// Objects Inside Arrays
+const pricelist = [
+    {
+        product : "apple",
+        price : 500
+    },
+    {
+        product : "orange",
+        price : 200
+    },
+    {
+        product : "avacado",
+        price : 600
+    }
+]
+console.log(pricelist); 
+// [
+//   { product: 'apple', price: 500 },
+//   { product: 'orange', price: 200 },
+//   { product: 'avacado', price: 600 }
+// ]
+
