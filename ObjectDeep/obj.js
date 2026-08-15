@@ -65,9 +65,9 @@ const user1 = {
 };
 
 const keyvalues = Object.keys(user1);
-console.log(keyvalues); // [ 'name', 'address', 'greet', 'grow' ]
+// console.log(keyvalues); // [ 'name', 'address', 'greet', 'grow' ]
 const values = Object.values(user1);
-console.log(values);
+// console.log(values);
 // output
 // [
 //   'Soorya',
@@ -77,4 +77,24 @@ console.log(values);
 // ]
 
 
+// object entries - Object.entries() is used when you want to get both the key and the value from an object.
+// console.log(Object.entries(user1))
+// output
+// [
+//   [ 'name', 'Soorya' ],
+//   [ 'address', { city: 'Kochi', state: 'Kerala' } ],
+//   [ 'greet', [Function: greet] ],
+//   [ 'grow', [Function: grow] ]
+// ]
 
+const keyvalue = Object.keys(user1);
+// keyvalue.forEach(key => console.log(key, user1[key]))
+// output
+// bstar@saraths-MacBook-Air ObjectDeep % node obj.js
+// name Soorya
+// address { city: 'Kochi', state: 'Kerala' }
+// greet [Function: greet]
+// grow [Function: grow]
+
+
+// for...in
