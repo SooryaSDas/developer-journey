@@ -124,6 +124,10 @@ const pricelist = [
 
 // Using the in operator - check is this exist or not
 // console.log("name" in employees) // true
+if ("email" in user) {
+    console.log(user.email); // nothing will print
+}
+
 
 const developer = {
     name: "Soorya",
