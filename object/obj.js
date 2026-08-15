@@ -120,5 +120,21 @@ const pricelist = [
 //   { product: 'avacado', price: 600 }
 // ]
 
-console.log(pricelist[0]) // { product: 'apple', price: 500 }
+// console.log(pricelist[0]) // { product: 'apple', price: 500 }
 
+
+const developer = {
+    name: "Soorya",
+    age: 28,
+    role: "Software Developer",
+    skills: ["JavaScript", "React", "Next.js"],
+
+    address: {
+        city: "Kochi",
+        state: "Kerala"
+    },
+
+    introduce() {
+        console.log(`Hi, I'm ${this.name}`);
+    }
+};
