@@ -61,4 +61,35 @@ const obj3 = {
          console.log(a+b); // unreachable code
     }
 }
-obj3.greet(10,20); // 30
+// obj3.greet(10,20); // 30
+
+// Nested Objects
+const employees = {
+    name : "soorya",
+    address : {
+        street : "attingal",
+        pincode : 695102,
+        landmark : "near avanavanchery school",
+    }
+}
+// console.log(employees)
+// output
+// {
+//   name: 'soorya',
+//   address: {
+//     street: 'attingal',
+//     pincode: 695102,
+//     landmark: 'near avanavanchery school'
+//   }
+// }
+
+employees.address.pincode = 695103;
+console.log(employees)
+// {
+//       name: 'soorya',
+//   address: {
+//     street: 'attingal',
+//     pincode: 695103,
+//     landmark: 'near avanavanchery school'
+//   }
+// }
