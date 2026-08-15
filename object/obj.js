@@ -145,6 +145,19 @@ const developer = {
     }
 };
 
-console.log(developer.introduce())
+// console.log(developer.introduce())
 // Hi, I'm Soorya
 // undefined
+
+const use = {
+    name: "Soorya"
+};
+
+const anotherUser = use;
+
+anotherUser.name = "Arun";
+
+// console.log(use.name);
+// console.log(anotherUser.name);
+// // Arun
+// // Arun
