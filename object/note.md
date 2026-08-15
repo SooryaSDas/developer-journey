@@ -55,3 +55,4 @@ user.name = "kavya"
 delete user.name;
 
 7. checking where this property exist
+user.hasOwnProperty("name"); // it give result like true or false

@@ -41,3 +41,5 @@ delete user1.age;
 "name" in user1
 const check = user1.hasOwnProperty("name");
 console.log(check) // true
+
+//. Object Methods
