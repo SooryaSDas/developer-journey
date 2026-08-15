@@ -67,6 +67,7 @@ console.log("name" in user)
 };
 user4.name = "Arun";
 console.log(user4.name);  // Arun - this time the object property was reassinging it's possible
+is allowed because you're modifying the object, not reassigning the variable.
 
 2) const user = {
     name: "Soorya"

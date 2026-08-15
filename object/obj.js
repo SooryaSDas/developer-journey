@@ -188,3 +188,24 @@ const users = {
 // console.log(users[key]); // Soorya
 // console.log(users.key); // undefined
 
+const developers = {
+    name: "Soorya",
+    age: 28,
+
+    address: {
+        city: "Kochi"
+    },
+
+    greet() {
+        console.log(this.name);
+        console.log(this.address.city);
+    }
+};
+
+developers.age = 29;
+developers.address.city = "Trivandrum";
+
+developers.greet();
+
+console.log(developers.age);
+console.log(developers.address.city);
