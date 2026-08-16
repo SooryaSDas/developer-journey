@@ -90,3 +90,9 @@ Rest -> collect remaining, "Take this one, and put the rest into a new object."
 
 // Object Reference vs Copy
 
+1. Object Reference
+const sandras = {
+    fullname : "sandra satheesh",
+    age : 26
+}
+const copy = sandras

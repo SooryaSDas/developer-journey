@@ -227,9 +227,9 @@ const res = {
     place : "Ernakulam"
 }
  const {namess, ...rest} = res;
-console.log(namess); // kanmani
-console.log(rest); // { place: 'Ernakulam' } // collects everything that hasn't already been taken
-console.log(res); // { namess: 'kanmani', place: 'Ernakulam' }
+// console.log(namess); // kanmani
+// console.log(rest); // { place: 'Ernakulam' } // collects everything that hasn't already been taken
+// console.log(res); // { namess: 'kanmani', place: 'Ernakulam' }
 
 
 
@@ -241,3 +241,36 @@ console.log(res); // { namess: 'kanmani', place: 'Ernakulam' }
 
 // Object Reference vs Copy
 
+// 1. Object Reference
+const sandras = {
+    fullname : "sandra satheesh",
+    age : 26
+}
+const copy = sandras;
+// console.log(copy); // { fullname: 'sandra satheesh', age: 26 }
+copy.fullname = "soorya s das";
+// console.log(copy); // { fullname: 'soorya s das', age: 26 }
+// console.log(sandras); // { fullname: 'soorya s das', age: 26 }
+
+
+// 2. Spread operator
+const sandraspread = {
+    ...sandras,
+    address : {
+        city : "Kochi",
+        state : "Kerala"
+    },
+    greet : function(){
+        console.log(this.address.city);
+    }
+
+}
+sandraspread.fullname = "soorya s das";
+console.log(sandras); // { fullname: 'soorya s das', age: 26 }
+console.log(sandraspread); 
+// {
+//   fullname: 'soorya s das',
+//   age: 26,
+//   address: { city: 'Kochi', state: 'Kerala' },
+//   greet: [Function: greet]
+// }
