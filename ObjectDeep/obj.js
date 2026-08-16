@@ -160,6 +160,7 @@ const { naam, ages = 28 } = user3;
 // console.log(naam); // Soorya
 // console.log(ages); // 28
 
+// ---------------------------------------
 
 // Nested Object Destructuring
 const mydata = {
@@ -173,7 +174,33 @@ const mydata = {
 const {
     address: { places }
 } = mydata;
-console.log(place) // attingal
+// console.log(place) // attingal
 
+// ---------------------------------------
 
 // Object Spread Operator ... 
+const spreadop = {
+    name : "sandra",
+    place : "attingal",
+    age : 25,
+    greet: function(){
+        console.log(this.name+ " is "+ this.age+ " years old ")
+    }
+}
+const san = {
+    ...spreadop,
+    age: 26
+}
+// console.log(san.greet())  // sandra is 26 years old , undefined
+
+// console.log(spreadop.greet()) // sandra is 25 years old , undefined
+
+// ---------------------------------------
+// When duplicate properties exist, the property that comes later wins.
+
+const sandra = {
+    age:26,
+    ...spreadop
+}
+console.log(sandra.greet()); // sandra is 25 years old , undefined
+console.log(spreadop.greet()) // sandra is 25 years old , undefined

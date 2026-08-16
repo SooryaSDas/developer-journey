@@ -36,3 +36,22 @@ const {name, place } = user
 console.log(name);
 
 8. Object Spread Operator ...
+it take properties from one object and copy to another one object
+const spreadop = {
+    name : "sandra",
+    place : "attingal",
+    age : 25,
+    greet: function(){
+        console.log(this.name+ " is "+ this.age+ " years old ")
+    }
+}
+const san = {
+    ...spreadop,
+    age: 26
+}
+console.log(san.greet())  // sandra is 26 years old , undefined
+
+console.log(spreadop.greet()) // sandra is 25 years old , undefined
+
+When duplicate properties exist, the property that comes later wins.
+for example if current code take the age second and spread the spreadop first right, we can tall the age first then we can spread the operator and see
