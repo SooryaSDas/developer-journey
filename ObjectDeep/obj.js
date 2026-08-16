@@ -297,6 +297,7 @@ copyshallo.address.city = "kochi";
 
 // Deep copy
 // structuredClone is a built-in method in JavaScript that creates a deep copy of a given object, including all nested objects and arrays. This means that changes made to the copied object will not affect the original object, and vice versa.
+// Shallow copy copies only the first level. Deep copy recursively creates independent copies of nested objects.
 const user5 = {
     name: "Soorya",
     address: {
