@@ -96,3 +96,39 @@ const sandras = {
     age : 26
 }
 const copy = sandras
+
+
+// 2. Spread operator
+const sandraspread = {
+    ...sandras,
+    address : {
+        city : "Kochi",
+        state : "Kerala"
+    },
+    greet : function(){
+        console.log(this.address.city);
+    }
+
+}
+sandraspread.fullname = "soorya s das";
+console.log(sandras); // { fullname: 'soorya s das', age: 26 }
+console.log(sandraspread); 
+
+
+Spread creates a shallow copy, not a completely independent deep copy.
+
+// Shallow Copy 
+The outer object is copied, but the inner objects are still referenced. If you change an inner object in the copied object, it will also affect the original object. 
+
+const shallo = {
+    name : "soorya",
+    address : {
+        city : "trivandrum"
+    }
+}
+const copyshallo = {...shallo};
+const add = copyshallo.address === shallo.address
+console.log(add); // true - Because both point to the same nested object.
+
+const add2 = copyshallo === shallo;
+console.log(add2); // false
