@@ -202,5 +202,20 @@ const sandra = {
     age:26,
     ...spreadop
 }
-console.log(sandra.greet()); // sandra is 25 years old , undefined
-console.log(spreadop.greet()) // sandra is 25 years old , undefined
+// console.log(sandra.greet()); // sandra is 25 years old , undefined
+// console.log(spreadop.greet()) // sandra is 25 years old , undefined
+
+// Adding a new property
+const saan = {
+    ...spreadop,
+    study: "BCA"
+}
+console.log(saan)
+//result
+// {
+//   name: 'sandra',
+//   place: 'attingal',
+//   age: 25,
+//   greet: [Function: greet],
+//   study: 'BCA'
+// }

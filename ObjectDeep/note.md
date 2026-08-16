@@ -37,6 +37,8 @@ console.log(name);
 
 8. Object Spread Operator ...
 it take properties from one object and copy to another one object
+Spread does NOT modify the original object
+
 const spreadop = {
     name : "sandra",
     place : "attingal",
@@ -61,3 +63,11 @@ const sandra = {
 }
 console.log(sandra.greet()); // sandra is 25 years old , undefined
 console.log(spreadop.greet()) // sandra is 25 years old , undefined
+
+
+// Adding a new property
+const saan = {
+    ...spreadop,
+    study: "BCA"
+}
+console.log(saan)
