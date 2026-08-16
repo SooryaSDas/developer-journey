@@ -55,3 +55,9 @@ console.log(spreadop.greet()) // sandra is 25 years old , undefined
 
 When duplicate properties exist, the property that comes later wins.
 for example if current code take the age second and spread the spreadop first right, we can tall the age first then we can spread the operator and see
+const sandra = {
+    age:26,
+    ...spreadop
+}
+console.log(sandra.greet()); // sandra is 25 years old , undefined
+console.log(spreadop.greet()) // sandra is 25 years old , undefined
