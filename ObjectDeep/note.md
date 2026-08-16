@@ -71,3 +71,20 @@ const saan = {
     study: "BCA"
 }
 console.log(saan)
+
+// Rest Operator with Objects ...
+This is very similar in syntax to spread, but the job is completely different.
+const res = {
+    namess : "kanmani",
+    place : "Ernakulam"
+}
+ const {namess, ...rest} = res;
+console.log(namess); // kanmani
+console.log(rest); // { place: 'Ernakulam' } // collects everything that hasn't already been taken:
+
+
+// Rest vs Spread
+Spread → expands/copies , "Take everything out and spread it."
+Rest -> collect remaining, "Take this one, and put the rest into a new object."
+
+

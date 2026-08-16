@@ -210,7 +210,7 @@ const saan = {
     ...spreadop,
     study: "BCA"
 }
-console.log(saan)
+// console.log(saan)
 //result
 // {
 //   name: 'sandra',
@@ -219,3 +219,19 @@ console.log(saan)
 //   greet: [Function: greet],
 //   study: 'BCA'
 // }
+
+
+// Rest Operator with Objects ...
+const res = {
+    namess : "kanmani",
+    place : "Ernakulam"
+}
+ const {namess, ...rest} = res;
+console.log(namess); // kanmani
+console.log(rest); // { place: 'Ernakulam' } // collects everything that hasn't already been taken
+console.log(res); // { namess: 'kanmani', place: 'Ernakulam' }
+
+
+
+// Rest vs Spread
+
