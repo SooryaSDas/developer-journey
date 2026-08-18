@@ -16,3 +16,28 @@ const unshifted = fruits.unshift("banana", "grapes");
 
 // console.log(fruits); // [ 'banana', 'grapes', 'apple', 'orange' ]
 
+// Array operations
+//1.  includes()
+// console.log(fruits.includes("kiwi")); // false
+
+//2.  indexOf
+// console.log(fruits.indexOf("banana")); // 1
+// What if the value doesn't exist? -1
+// console.log(fruits.indexOf("Banana")); // -1
+// indexOf() returns -1 when it cannot find the value.
+
+
+// 3. lastIndexOf()
+const numarr = [10, 20, 30, 10, 40];
+// console.log(numarr.lastIndexOf(10)) // 3
+// console.log(numarr.lastIndexOf(80)); // -1 (not found)
+// console.log(numarr.indexOf(10)) // 0 first value in 'indexof'
+
+
+// slice()
+const result = numarr.slice(1,4);
+console.log(result); // [ 20, 30, 10 ]
+console.log(numarr.slice(-3));  // [ 30, 10, 40 ]
+console.log(numarr.slice(3, 8)) // [ 10, 40 ]
+console.log(numarr.slice(8)) // []
+
