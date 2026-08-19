@@ -116,9 +116,9 @@ const res = splicearr1.splice(4,1,50);
 console.log(res); // [ 20 ]
 console.log(splicearr1) // [ 10, 20, 30, 40, 50, 60 ]
 
-start at index 2
+start at index 4
        ↓
-delete 0 elements
+delete 1 elements
        ↓
-add 30
+add 50
 
