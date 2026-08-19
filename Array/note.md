@@ -130,3 +130,32 @@ add 50
 | `slice(start, end)`      | `splice(start, deleteCount, items...)` |
 | End index                | Delete count                           |
 
+
+// concat()
+concat() is used to combine two or more arrays into a new array.
+Both spread (...) and concat() create a shallow copy, so if the array contains a nested object, the object reference is shared.
+
+// join()
+join() is used to combine all array elements into a single string.
+const fruits = ["Apple", "Banana", "Mango"];
+console.log(fruits.join(", "));
+
+The default separator is a comma ,.
+console.log(fruits.join()); // "Apple, Banana, Mango"
+join() converts the elements of an array into a single string using a separator.
+
+| Method          | Modifies original array? |
+| --------------- | ------------------------ |
+| `push()`        | ✅ Yes                    |
+| `pop()`         | ✅ Yes                    |
+| `shift()`       | ✅ Yes                    |
+| `unshift()`     | ✅ Yes                    |
+| `splice()`      | ✅ Yes                    |
+| `slice()`       | ❌ No                     |
+| `concat()`      | ❌ No                     |
+| `join()`        | ❌ No                     |
+| `includes()`    | ❌ No                     |
+| `indexOf()`     | ❌ No                     |
+| `lastIndexOf()` | ❌ No                     |
+//------------------------------------------------
+

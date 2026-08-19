@@ -54,3 +54,15 @@ const splicearr1 = [10, 20, 30, 40, 20, 60];
 const res = splicearr1.splice(4,1,50);
 // console.log(res); // [ 20 ]
 // console.log(splicearr1) // [ 10, 20, 30, 40, 50, 60 ]
+
+// concat() 
+const arr1 = [10,20,30];
+const arr2 = [40, 50, 60];
+const arr3 = arr1.concat(arr2);
+// console.log(arr3); // [ 10, 20, 30, 40, 50, 60 ]
+
+// join()
+const fruit = ["apple" , "banana", "mango"];;
+console.log(fruit.join(", ")); // apple, banana, mango
+console.log(fruit.join("-")); // apple-banana-mango
+console.log(fruit.join(".")); // apple.banana.mango
