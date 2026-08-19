@@ -36,8 +36,17 @@ const numarr = [10, 20, 30, 10, 40];
 
 // slice()
 const result = numarr.slice(1,4);
-console.log(result); // [ 20, 30, 10 ]
-console.log(numarr.slice(-3));  // [ 30, 10, 40 ]
-console.log(numarr.slice(3, 8)) // [ 10, 40 ]
-console.log(numarr.slice(8)) // []
+// console.log(result); // [ 20, 30, 10 ]
+// console.log(numarr.slice(-3));  // [ 30, 10, 40 ]
+// console.log(numarr.slice(3, 8)) // [ 10, 40 ]
+// console.log(numarr.slice(8)) // []
 
+
+// splice()
+const splicearr = [10, 20, 30, 40, 20, 60];
+// arr.splice(start, deleteCount);
+const spliceresult = splicearr.splice(1,2);
+console.log(splicearr); // [ 10, 40, 20, 60 ]
+console.log(spliceresult) // [ 20, 30 ]
+
+// adding elements

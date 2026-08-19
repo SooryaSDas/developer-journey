@@ -88,3 +88,27 @@ end → excluded ❌
 original array → unchanged ✅
 returns → new array
 
+
+// splice()
+splice() is used to add, remove, or replace elements in an array.
+splice() modifies the original array.
+arr.splice(start, deleteCount);
+
+Index:   0    1    2    3    4
+         ↓    ↓    ↓    ↓    ↓
+Value:  10   20   30   40   50
+              ↑    ↑
+            delete these
+
+// Return value
+splice() returns an array containing the elements that were removed.
+splice()
+   ↓
+removes elements
+   ↓
+returns removed elements in an array
+
+// Adding elements
+You can also use splice() to add elements.
+
+
