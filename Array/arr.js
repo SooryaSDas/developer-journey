@@ -52,5 +52,5 @@ const spliceresult = splicearr.splice(1,2);
 // adding elements
 const splicearr1 = [10, 20, 30, 40, 20, 60];
 const res = splicearr1.splice(4,1,50);
-console.log(res); // [ 20 ]
-console.log(splicearr1) // [ 10, 20, 30, 40, 50, 60 ]
+// console.log(res); // [ 20 ]
+// console.log(splicearr1) // [ 10, 20, 30, 40, 50, 60 ]
