@@ -111,4 +111,14 @@ returns removed elements in an array
 // Adding elements
 You can also use splice() to add elements.
 
+const splicearr1 = [10, 20, 30, 40, 20, 60];
+const res = splicearr1.splice(4,1,50);
+console.log(res); // [ 20 ]
+console.log(splicearr1) // [ 10, 20, 30, 40, 50, 60 ]
+
+start at index 2
+       ↓
+delete 0 elements
+       ↓
+add 30
 
