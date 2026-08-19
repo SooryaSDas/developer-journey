@@ -83,4 +83,8 @@ Negative:  -5   -4   -3   -2   -1
 arr.slice(-2); // [40, 50]
 console.log(arr.slice(-3)); // [30, 40, 50]
 
- 
+start → included ✅
+end → excluded ❌
+original array → unchanged ✅
+returns → new array
+
