@@ -46,7 +46,11 @@ const result = numarr.slice(1,4);
 const splicearr = [10, 20, 30, 40, 20, 60];
 // arr.splice(start, deleteCount);
 const spliceresult = splicearr.splice(1,2);
-console.log(splicearr); // [ 10, 40, 20, 60 ]
-console.log(spliceresult) // [ 20, 30 ]
+// console.log(splicearr); // [ 10, 40, 20, 60 ]
+// console.log(spliceresult) // [ 20, 30 ]
 
 // adding elements
+const splicearr1 = [10, 20, 30, 40, 20, 60];
+const res = splicearr1.splice(4,1,50);
+console.log(res); // [ 20 ]
+console.log(splicearr1) // [ 10, 20, 30, 40, 50, 60 ]
