@@ -92,7 +92,7 @@ returns → new array
 // splice()
 splice() is used to add, remove, or replace elements in an array.
 splice() modifies the original array.
-arr.splice(start, deleteCount);
+arr.splice(start, deleteCount, item1, item2, ...);
 
 Index:   0    1    2    3    4
          ↓    ↓    ↓    ↓    ↓
@@ -121,4 +121,12 @@ start at index 4
 delete 1 elements
        ↓
 add 50
+
+| `slice()`                | `splice()`                             |
+| ------------------------ | -------------------------------------- |
+| Extracts part of array   | Adds/removes/replaces                  |
+| Does NOT modify original | **Modifies original**                  |
+| Returns a new array      | Returns removed elements               |
+| `slice(start, end)`      | `splice(start, deleteCount, items...)` |
+| End index                | Delete count                           |
 
