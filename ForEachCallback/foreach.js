@@ -75,10 +75,36 @@ const fnnum = num.forEach(function (fn){
 // Traditional:
 const numbers = [10, 20, 30];
 for(let i=0; i<numbers.length; i++){
-    console.log(numbers[i])
+    // console.log(numbers[i])
 }
 // result:
 // 10
 // 20
 // 30
 
+// foreach
+// const result1 = numbers.forEach((fn)=>console.log(fn))
+// result:
+// 10
+// 20
+// 30
+
+// can we use break
+const breakresult = numbers.forEach((fn)=>{
+     if(numbers === 2){
+        // break;
+    }
+    //  console.log(numbers); // SyntaxError: Illegal break statement
+})
+
+
+
+const numbersw = [10, 20, 30];
+
+numbersw.forEach((number) => {
+  console.log(number);
+});
+// result
+// 10
+// 20
+// 30

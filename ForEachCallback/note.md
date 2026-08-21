@@ -30,3 +30,16 @@ const numfn = num.forEach(function (fn){
 4. forEach() vs traditional for loop
 // Traditional
 
+5. Break
+// can we use break
+const breakresult = numbers.forEach((fn)=>{
+     if(numbers === 2){
+        break;
+    }
+     console.log(numbers); // SyntaxError: Illegal break statement
+})
+❌ No.
+You cannot directly use break inside forEach() like this.
+This is another reason forEach() isn't simply a replacement for every for loop.
+
+6. 
