@@ -102,9 +102,17 @@ const breakresult = numbers.forEach((fn)=>{
 const numbersw = [10, 20, 30];
 
 numbersw.forEach((number) => {
-  console.log(number);
+//   console.log(number);
 });
 // result
 // 10
 // 20
 // 30
+
+const number = [1, 2, 3, 4, 5, 6];
+const results = number.forEach((fn)=>{
+    if(fn%2 == 0){
+        console.log(number[fn]);
+    }
+})
+console.log(results);
