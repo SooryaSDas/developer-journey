@@ -75,8 +75,10 @@ const fnnum = num.forEach(function (fn){
 // Traditional:
 const numbers = [10, 20, 30];
 for(let i=0; i<numbers.length; i++){
-    console.log(numbers[i]);
+    console.log(numbers[i])
 }
+// result:
 // 10
 // 20
 // 30
+
