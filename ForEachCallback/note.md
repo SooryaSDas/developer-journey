@@ -19,4 +19,14 @@ array.forEach(function (element, index, array) {
   
 });
 
+3. Very Important: forEach() doesn't return a new array
+const num = [1,2,3,4,5];
+const numfn = num.forEach(function (fn){
+    return num * 2
+})
+// console.log(numfn) // undefined
+
+
+4. forEach() vs traditional for loop
+// Traditional
 
