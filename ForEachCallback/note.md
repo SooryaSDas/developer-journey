@@ -13,3 +13,9 @@ calls that function
 for every array element
 
 2. The callback receives the element
+forEach() gives us more than the element
+The callback can receive three arguments:
+array.forEach(function (element, index, array) {
+  
+});
+
