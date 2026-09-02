@@ -49,7 +49,7 @@ const result = numbers.map((num) => {
 const reuslt1 = numbers.map((data)=>{
     return;
 }) 
-console.log(reuslt1) // [ undefined, undefined, undefined ]
+// console.log(reuslt1) // [ undefined, undefined, undefined ]
 
 // 4. get only the names
 const users = [
@@ -59,6 +59,9 @@ const users = [
 ];
 
 const namesonly = users.map((user)=>{
-    console.log(user.name)
+    return {
+    name: user.name,
+    age: user.age + 1
+  };
 })
 console.log(namesonly)
