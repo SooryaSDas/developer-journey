@@ -9,6 +9,14 @@ const result = fruits.forEach(function (fruits){
 // pinapple
 // papaya
 
+const checking = fruits.forEach((data)=>{
+    // console.log(data)
+})
+// result
+// mango
+// kiwi
+// pinapple
+// papaya
 
 // forEach() gives us more than the element
 const element = fruits.forEach((fruits, index, array)=>{
@@ -111,8 +119,12 @@ numbersw.forEach((number) => {
 
 const number = [1, 2, 3, 4, 5, 6];
 const results = number.forEach((fn)=>{
-    if(fn%2 == 0){
-        console.log(number[fn]);
+    if(fn%2 != 0){
+        // console.log(number[fn]);
     }
 })
-console.log(results);
+// result
+// 2
+// 4
+// 6
+
