@@ -1,4 +1,3 @@
-const { use } = require("react");
 
 const arr = [10,20,30,40];
 // const multiple = arr.map((num)=>{
@@ -58,10 +57,14 @@ const users = [
   { name: "Arun", age: 24 }
 ];
 
-const namesonly = users.map((user)=>{
-    return {
-    name: user.name,
-    age: user.age + 1
-  };
+const objmap = users.map((user)=>{
+   return console.log(user.name)
 })
-console.log(namesonly)
+console.log(objmap);
+// output
+// Soorya
+// Rahul
+// Arun
+// [ undefined, undefined, undefined ]
+
+// 5. 
