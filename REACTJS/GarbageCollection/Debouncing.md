@@ -85,3 +85,64 @@ Type "a"
 STOP typing
 → Timer 6 completes after 500ms
 → Update debounced value
+
+<!----------------------------------------------------------- -->
+
+<!-- debouncing realtime example -->
+
+import React from 'react';
+import { useEffect, useState } from "react";
+
+const users = [
+  { id: 1, name: "Soorya" },
+  { id: 2, name: "Rahul" },
+  { id: 3, name: "Anu" },
+  { id: 4, name: "John" },
+  { id: 5, name: "Sarah" },
+];
+
+function useDebounce(value, delay) {
+  const [debouncedValue, setDebouncedValue] = useState(value);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [value, delay]);
+
+  return debouncedValue;
+}
+
+
+function App() {
+    const [search, setSearch] = useState("");
+ const debouncedSearch = useDebounce(search, 500);
+
+  const filteredUsers = users.filter((user) =>
+    user.name.toLowerCase().includes(debouncedSearch.toLowerCase())
+  );
+
+  return (
+    <div>
+     <input
+        type="text"
+        placeholder="Search user..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+
+      <div>
+        {filteredUsers.map((user) => (
+          <p key={user.id}>{user.name}</p>
+        ))}
+      </div>
+      
+    </div>
+  )
+}
+
+export default App
