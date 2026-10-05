@@ -146,3 +146,44 @@ function App() {
 }
 
 export default App
+
+
+---------------------------------------------------
+without debouncing the normal search
+
+import React from 'react';
+import { useState , useEffect} from 'react'
+
+const details = [
+    {id: 1, name: "soorya"},
+    {id: 2, name: "sandra"},
+    {id: 3, name: "yamuna"},
+    {id: 4, name: "ganga"}
+]
+
+function App() {
+    const [name, setName] = useState("");
+    const filteredvalue = details.filter((value)=>
+            value.name.toLowerCase().includes(name.toLowerCase())
+        )
+    
+
+    return (
+       <div> 
+            <input 
+                type="text"
+                placeholder="Enter the name ..."
+                value={name}
+                onChange={(e)=>setName(e.target.value)}
+            />
+
+        {filteredvalue.map((value)=>(
+            <div> 
+                <p>{value.name} </p>
+            </div>
+        ))}
+       </div>
+    )
+}
+
+export default App
