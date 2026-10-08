@@ -101,4 +101,29 @@ Redux Toolkit → State management
 
 React = Components + JSX + Virtual DOM + Props + State + Hooks + One-way Data Flow + Reusabilit
 <!-- ---------------------------------------------------- -->
-4. 
+
+4. What is JSX?
+JSX stands for JavaScript XML.
+JSX  is a syntax extension for js that allows us to write the html like code inside of the javascript when building the react components.
+function App() {
+  return <h1>Hello, Soorya!</h1>;
+}
+
+JSX is not HTML
+JSX looks like HTML, but it is not HTML.
+The browser doesn't directly understand JSX. JSX is transformed into regular JavaScript during the build process.
+JSX stands for JavaScript XML. It is a syntax extension for JavaScript that allows us to write HTML-like syntax inside JavaScript while building React components. JSX makes React code more readable and expressive. It is not directly understood by the browser; it is transformed into JavaScript during the build process.
+
+Modern React projects may use the newer automatic JSX runtime, so you won't necessarily see React.createElement in the generated code. The important idea is that JSX is transformed into JavaScript function calls that React can use.
+
+In a React project, tools such as Vite, Babel, or other compiler/tooling transform your source code.
+
+5. Why do we use JSX?
+We use JSX because it allows us to write HTML-like UI syntax directly inside JavaScript. It makes React components easier to read and maintain, and allows us to easily combine UI markup with JavaScript expressions, conditions, and data. JSX is not required by React, but it provides a more convenient and readable way to describe the UI.
+
+6. Can browsers directly understand JSX?
+No. Browsers cannot directly understand JSX.
+Browsers understand JavaScript, HTML, CSS, but JSX is not a standard browser language.
+No, browsers cannot directly understand JSX. JSX is a syntax extension for JavaScript, so it needs to be transformed into regular JavaScript by the React build tooling before the browser can execute it.
+
+7. 
