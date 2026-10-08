@@ -126,4 +126,30 @@ No. Browsers cannot directly understand JSX.
 Browsers understand JavaScript, HTML, CSS, but JSX is not a standard browser language.
 No, browsers cannot directly understand JSX. JSX is a syntax extension for JavaScript, so it needs to be transformed into regular JavaScript by the React build tooling before the browser can execute it.
 
-7. 
+7. What is a component?  
+A component is a reusable, independent piece of UI in a React application.
+Think of a component as a building block of your website.
+Reusability - Create once and use multiple times.
+Maintainability - A large application can be divided into smaller pieces.
+Separation of concerns - Each component can handle a particular part of the UI.
+Easier testing - Small components are easier to test and debug.
+
+A component is a reusable and independent piece of UI in React. It is typically a JavaScript function that returns JSX. Components help us break a large application into smaller, manageable pieces, and they can receive data through props and manage their own state.
+
+8. What is the difference between functional and class components?
+The main difference is that functional components are JavaScript functions, while class components are JavaScript classes.
+Today, functional components are the standard approach in modern React. Class components are mostly found in older React codebases.
+Functional components are JavaScript functions that return JSX and use Hooks such as useState and useEffect to manage state and side effects. Class components are JavaScript classes that extend React.Component and use this.state, this.setState(), and lifecycle methods. Functional components are preferred in modern React because they are simpler, have less boilerplate, and support Hooks.
+
+| Functional Component      | Class Component                              |
+| ------------------------- | -------------------------------------------- |
+| JavaScript function       | JavaScript class                             |
+| Uses Hooks                | Uses lifecycle methods/state APIs            |
+| No `this`                 | Uses `this`                                  |
+| Less code                 | More boilerplate                             |
+| Easier to learn           | More complex                                 |
+| Standard for modern React | Mostly legacy/older code                     |
+| `useState()` for state    | `this.state` / `this.setState()`             |
+| `useEffect()` for effects | Lifecycle methods like `componentDidMount()` |
+
+9. 
