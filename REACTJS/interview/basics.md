@@ -98,5 +98,7 @@ React Router → Routing
 TanStack Query → Server-state/data fetching
 React Hook Form → Forms
 Redux Toolkit → State management
+
+React = Components + JSX + Virtual DOM + Props + State + Hooks + One-way Data Flow + Reusabilit
 <!-- ---------------------------------------------------- -->
 4. 
