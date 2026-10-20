@@ -156,3 +156,5 @@ Functional components are JavaScript functions that return JSX and use Hooks suc
 Props is short for properties.
 Props are used to pass data from a parent component to a child component.
 Think of props like arguments passed to a JavaScript function.
+
+10. 
