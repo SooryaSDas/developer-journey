@@ -157,4 +157,7 @@ Props is short for properties.
 Props are used to pass data from a parent component to a child component.
 Think of props like arguments passed to a JavaScript function.
 
-10. 
+10. Variables
+variable is a container to store data in js
+we can store d/f types of values like boolean, string, numbers, objects etc
+in moders js use the let and const instead of var
