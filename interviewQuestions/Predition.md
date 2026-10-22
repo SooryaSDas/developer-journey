@@ -38,3 +38,24 @@ function checkNum(a){
 
 4. Remove duplicate values from an array.
 
+const nums = [1, 2, 2, 3, 4, 4, 5];
+const unique = [...new Set(nums)];
+console.log(unique);
+
+output
+[ 1, 2, 3, 4, 5 ]
+
+
+OR
+
+const nums = [1, 2, 2, 3, 4, 4, 5];
+const result = [];
+for(let i=0; i<nums.length; i++){
+  if(!result.includes(nums[i])){
+    result.push(nums[i])
+  }
+}
+console.log(result);
+//-------------------------------------------
+
+5. 
