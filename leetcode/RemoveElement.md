@@ -33,6 +33,7 @@ answer:
  * @param {number} val
  * @return {number}
  */
+
 var removeElement = function(nums, val) {
     let k = 0; // k is a counter that also tells us where to put the next number we want to keep.
     for(let i=0; i<nums.length;i++){
@@ -43,3 +44,37 @@ var removeElement = function(nums, val) {
     }
     return k;
 };
+
+Variable / code	Simple meaning
+i	Checks each number
+k	Tracks where to put the next valid number
+nums[k] = nums[i]	Copies a valid number into the correct position
+k++	Increases the count of valid numbers
+return k	Returns the final count
+
+
+* want to display the array values
+
+var removeElement = function(nums, val) {
+    let k = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] !== val) {
+            nums[k] = nums[i];
+            k++;
+        }
+    }
+
+    return {
+        k: k,
+        nums: nums.slice(0, k)
+    };
+};
+
+console.log(removeElement([3, 2, 2, 3], 3));
+
+output
+{
+    k: 2,
+    nums: [2, 2]
+}
