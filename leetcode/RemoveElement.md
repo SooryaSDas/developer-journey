@@ -34,7 +34,7 @@ answer:
  * @return {number}
  */
 var removeElement = function(nums, val) {
-    let k = 0;
+    let k = 0; // k is a counter that also tells us where to put the next number we want to keep.
     for(let i=0; i<nums.length;i++){
        if(nums[i] !== val){
         nums[k] = nums[i]
