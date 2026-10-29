@@ -156,8 +156,98 @@ Functional components are JavaScript functions that return JSX and use Hooks suc
 Props is short for properties.
 Props are used to pass data from a parent component to a child component.
 Think of props like arguments passed to a JavaScript function.
+function User({ name }) {
+  return <h2>Hello, {name}</h2>;
+}
+
+function App() {
+  return <User name="Soorya" />;
+}
+Props should be treated as read-only by the receiving component.
 
 10. Variables
 variable is a container to store data in js
 we can store d/f types of values like boolean, string, numbers, objects etc
 in moders js use the let and const instead of var
+
+
+11. What is state in React?
+State stores information that can change over time. When state updates, React can render the component again.
+"use client";
+
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      Count: {count}
+    </button>
+  );
+}
+
+12. What is the difference between props and state?
+Props	                          |           State
+
+Passed into a component	        |         Managed by a component or state owner
+Read-only to the receiver	      |         Updated using a setter or reducer
+Used to configure components	  |         Used to track changing information
+Parent can pass new values	    |         Updates can trigger re-rendering
+
+13. What is the Virtual DOM?
+The Virtual DOM is a term commonly used to describe React's in-memory representation of the UI. React uses its rendering and reconciliation process to determine the necessary changes to the actual DOM.
+
+For example, if a counter changes from 1 to 2, React updates the relevant UI rather than requiring you to manually rebuild the whole page.
+
+14. What is the difference between React and JavaScript?
+JavaScript is a programming language. React is a library built using JavaScript to create user interfaces.
+
+JavaScript handles logic, calculations, and data manipulation. React helps us describe how the UI should look as that data changes.
+
+15. What is conditional rendering?
+Conditional rendering means displaying different UI depending on a condition.
+function App() {
+  const isLoggedIn = true;
+
+  return (
+    <div>
+      {isLoggedIn ? <h1>Welcome</h1> : <h1>Please Login</h1>}
+    </div>
+  );
+}
+
+16. How do you render a list in React?
+Use JavaScript's map() method.
+const fruits = ["Apple", "Mango", "Orange"];
+
+function App() {
+  return (
+    <ul>
+      {fruits.map((fruit) => (
+        <li key={fruit}>{fruit}</li>
+      ))}
+    </ul>
+  );
+}
+
+17. Why are keys important in React?
+Keys help React identify which list items have been added, removed, or reordered.
+{users.map((user) => (
+  <p key={user.id}>{user.name}</p>
+))}
+
+Prefer stable, unique IDs. Avoid array indexes as keys when list items can be reordered or deleted.
+
+18. What is event handling in React?
+Event handling lets us response to user actions such as clicking a button or typing in an input.
+function App() {
+  function handleClick() {
+    alert("Button clicked!");
+  }
+
+  return <button onClick={handleClick}>Click</button>;
+}
+Notice that we pass handleClick, not handleClick().
+
+19. 
