@@ -249,5 +249,14 @@ function App() {
   return <button onClick={handleClick}>Click</button>;
 }
 Notice that we pass handleClick, not handleClick().
+Understand the difference
+Code	                            Meaning
+onClick={handleClick}	            Pass the function to run later.
+onClick={handleClick()}	          Execute the function immediately.
+onClick={() => handleClick()}	    Pass a new function that calls handleClick when clicked.
 
-19. 
+19. What is the difference between onClick={handleClick} and onClick={handleClick()}?
+onClick={handleClick} passes the function for React to call when the click occurs.
+
+onClick={handleClick()} calls the function immediately while rendering, which is usually incorrect for an event handler.
+
