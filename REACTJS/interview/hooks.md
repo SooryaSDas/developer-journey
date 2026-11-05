@@ -41,3 +41,66 @@ function App() {
 export default App;
 
 <!-- Show and Hide Password -->
+import { useState } from "react";
+
+function App() {
+
+  const [showPassword, setShowPassword] = useState(false);
+
+  return (
+    <div>
+
+      <input
+        type={showPassword ? "text" : "password"}
+        placeholder="Enter password"
+      />
+
+      <button
+        onClick={() => setShowPassword(!showPassword)}
+      >
+        {showPassword ? "Hide" : "Show"}
+      </button>
+
+    </div>
+  );
+}
+
+export default App;
+
+<!-- Updating an Object using useState -->
+
+import { useState } from "react";
+
+function App() {
+
+  const [user, setUser] = useState({
+    name: "Soorya",
+    age: 25
+  });
+
+  function updateName() {
+
+    setUser({
+      ...user,
+      name: "John"
+    });
+
+  }
+
+  return (
+    <div>
+      <h2>{user.name}</h2>
+      <h2>{user.age}</h2>
+
+      <button onClick={updateName}>
+        Update Name
+      </button>
+    </div>
+  );
+}
+
+export default App;
+
+
+<!-- Updating an Array using useState -->
+
