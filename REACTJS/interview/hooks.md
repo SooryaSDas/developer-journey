@@ -380,60 +380,151 @@ function Payment() {
   );
 }
 
-export default Payment;import { useRef, useState } from "react";
+export default Payment;
 
-function Payment() {
+* Store the previous value
+import React from 'react';
+import { useState, useEffect, useRef } from 'react'
 
-  const isSubmitting = useRef(false);
-
-  const [message, setMessage] = useState("");
-
-  const handlePayment = async () => {
-
-    if (isSubmitting.current) {
-      return;
-    }
-
-    isSubmitting.current = true;
-
-    setMessage("Processing payment...");
-
-    try {
-
-      const response = await fetch("/api/payment", {
-        method: "POST"
-      });
-
-      if (!response.ok) {
-        throw new Error("Payment failed");
-      }
-
-      setMessage("Payment successful!");
-
-    } catch (error) {
-
-      setMessage(error.message);
-
-    } finally {
-
-      isSubmitting.current = false;
-
-    }
-  };
+function App() {
+  const [search, setSearch] = useState("")
+  const searchRef = useRef(false);
+  useEffect(()=>{
+    if(searchRef.current === null) return;
+    searchRef.current = search;
+  },[search])
 
   return (
     <div>
-      <button onClick={handlePayment}>
-        Pay Now
+     <input 
+      type="text"
+      placeholder="enter the full address"
+      value={search}
+      onChange={(e)=>setSearch(e.target.value)}
+     />
+
+     <h2>Current value : {search} </h2>
+     <h2>Previous value : {searchRef.current} </h2>
+    </div>
+  )
+}
+
+export default App
+
+* Click outside to close a dropdown or modal
+import { useEffect, useRef, useState } from "react";
+
+function ProfileMenu() {
+
+  const [open, setOpen] = useState(false);
+
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+
+    function handleClickOutside(event) {
+
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target)
+      ) {
+        setOpen(false);
+      }
+
+    }
+
+    document.addEventListener(
+      "mousedown",
+      handleClickOutside
+    );
+
+    return () => {
+      document.removeEventListener(
+        "mousedown",
+        handleClickOutside
+      );
+    };
+
+  }, []);
+
+  return (
+    <div ref={menuRef}>
+
+      <button onClick={() => setOpen(!open)}>
+        Profile
       </button>
 
-      <p>{message}</p>
+      {open && (
+        <div>
+          <p>My Account</p>
+          <p>Settings</p>
+          <p>Logout</p>
+        </div>
+      )}
+
     </div>
   );
 }
 
-export default Payment;
+export default ProfileMenu;
 
+* Click outside to close a dropdown or modal
+
+import { useEffect, useRef, useState } from "react";
+
+function ProfileMenu() {
+
+  const [open, setOpen] = useState(false);
+
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+
+    function handleClickOutside(event) {
+
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target)
+      ) {
+        setOpen(false);
+      }
+
+    }
+
+    document.addEventListener(
+      "mousedown",
+      handleClickOutside
+    );
+
+    return () => {
+      document.removeEventListener(
+        "mousedown",
+        handleClickOutside
+      );
+    };
+
+  }, []);
+
+  return (
+    <div ref={menuRef}>
+
+      <button onClick={() => setOpen(!open)}>
+        Profile
+      </button>
+
+      {open && (
+        <div>
+          <p>My Account</p>
+          <p>Settings</p>
+          <p>Logout</p>
+        </div>
+      )}
+
+    </div>
+  );
+}
+
+export default ProfileMenu;
 
 
 4) 
