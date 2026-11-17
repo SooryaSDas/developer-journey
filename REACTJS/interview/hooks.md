@@ -611,3 +611,56 @@ function App() {
 }
 
 export default App;
+
+
+5) useReducer()
+useReducer is a React Hook used for managing complex state logic. It accepts a reducer function and an initial state, and returns the current state and a dispatch function.
+
+import { useReducer } from "react";
+
+function reducer(state, action) {
+
+  if (action.type === "INCREMENT") {
+    return state + 1;
+  }
+
+  if (action.type === "DECREMENT") {
+    return state - 1;
+  }
+
+  return state;
+}
+
+function Counter() {
+
+  const [count, dispatch] = useReducer(
+    reducer,
+    0
+  );
+
+  return (
+    <div>
+      <h1>Count: {count}</h1>
+
+      <button
+        onClick={() => dispatch({ type: "INCREMENT" })}
+      >
+        +
+      </button>
+
+      <button
+        onClick={() => dispatch({ type: "DECREMENT" })}
+      >
+        -
+      </button>
+    </div>
+  );
+}
+
+export default Counter;
+
+Also, reducer functions should be pure:
+- Don't make API calls inside reducers.
+- Don't use setTimeout or setInterval inside reducers.
+- Don't modify external variables.
+- Don't directly modify the existing state.
