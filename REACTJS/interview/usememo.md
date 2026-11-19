@@ -93,12 +93,12 @@ function App() {
       </button>
 
       <button onClick={() => {
-        setCart(cart.filter((data) => data.item !== "mouse"))
+        setCart(cart.filter((data) => data.id  !== "mouse"))
       }}>
         remove mouse
       </button>
 
-      <button onClick={() => setCart(cart.filter((data) => data.item !== "laptop"))} >
+      <button onClick={() => setCart(cart.filter((data) => data.id  !== "laptop"))} >
         remove the laptop
       </button>
 
