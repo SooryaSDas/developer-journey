@@ -83,7 +83,7 @@ function App() {
         setCart([
           ...cart,
           {
-            id: cart.id + 1,
+            id: cart.lenth + 1,
             item: "monitor",
             price: 5000
           }
